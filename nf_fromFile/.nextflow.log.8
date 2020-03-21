@@ -1,0 +1,86 @@
+Mar-21 10:25:08.536 [main] DEBUG nextflow.cli.Launcher - $> nextflow run splitText.nf
+Mar-21 10:25:08.705 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-21 10:25:08.724 [main] INFO  nextflow.cli.CmdRun - Launching `splitText.nf` [hopeful_mercator] - revision: 196ba43229
+Mar-21 10:25:08.863 [main] DEBUG nextflow.Session - Session uuid: 2cefb7b3-59ea-40f0-aac4-32fffe88eb8c
+Mar-21 10:25:08.863 [main] DEBUG nextflow.Session - Run name: hopeful_mercator
+Mar-21 10:25:08.866 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-21 10:25:08.915 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.01.0 build 5264
+  Created: 12-02-2020 10:14 UTC (05:14 EDT)
+  System: Linux 4.15.0-20-generic
+  Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 31708@yuan-desktop [127.0.1.1]
+  CPUs: 8 - Mem: 15.6 GB (3.1 GB) - Swap: 372.5 GB (372.5 GB)
+Mar-21 10:25:08.952 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_fromFile/work [ext2/ext3]
+Mar-21 10:25:08.952 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_fromFile/bin
+Mar-21 10:25:09.006 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-21 10:25:09.009 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-21 10:25:09.353 [main] DEBUG nextflow.Session - Session start invoked
+Mar-21 10:25:09.968 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-21 10:25:09.982 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: split
+Mar-21 10:25:09.983 [main] WARN  nextflow.script.BaseScript - The use of `echo` method is deprecated
+Mar-21 10:25:10.158 [Actor Thread 1] ERROR nextflow.extension.DataflowHelper - @unknown
+java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_fromFile/test_data/sample.txt
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:421)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:155)
+	at nextflow.splitter.AbstractSplitter.newInputStream(AbstractSplitter.groovy:453)
+	at nextflow.splitter.AbstractTextSplitter.newReader(AbstractTextSplitter.groovy:144)
+	at nextflow.splitter.AbstractTextSplitter.normalizeSource(AbstractTextSplitter.groovy:122)
+	at nextflow.splitter.AbstractTextSplitter.normalizeSource(AbstractTextSplitter.groovy)
+	at nextflow.splitter.AbstractSplitter.apply(AbstractSplitter.groovy:153)
+	at nextflow.extension.SplitOp$_applySplittingOperator_closure1.doCall(SplitOp.groovy:189)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:37)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at nextflow.extension.DataflowHelper$_subscribeImpl_closure2.doCall(DataflowHelper.groovy:288)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.startTask(DataflowOperatorActor.java:120)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.onMessage(DataflowOperatorActor.java:108)
+	at groovyx.gpars.actor.impl.SDAClosure$1.call(SDAClosure.java:43)
+	at groovyx.gpars.actor.AbstractLoopingActor.runEnhancedWithoutRepliesOnMessages(AbstractLoopingActor.java:293)
+	at groovyx.gpars.actor.AbstractLoopingActor.access$400(AbstractLoopingActor.java:30)
+	at groovyx.gpars.actor.AbstractLoopingActor$1.handleMessage(AbstractLoopingActor.java:93)
+	at groovyx.gpars.util.AsyncMessagingCore.run(AsyncMessagingCore.java:132)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Mar-21 10:25:10.181 [Actor Thread 1] DEBUG nextflow.Session - Session aborted -- Cause: /home/yuan/project/nextflow/nf_fromFile/test_data/sample.txt
+Mar-21 10:25:10.236 [Actor Thread 1] DEBUG nextflow.Session - The following nodes are still active:
+  [operator] splitText
+
+Mar-21 10:25:10.254 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-21 10:25:10.254 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-21 10:25:10.263 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-21 10:25:10.277 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.6 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar-21 10:25:10.376 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > split -- maxForks: 8; blocking: false
+Mar-21 10:25:10.401 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar-21 10:25:10.401 [main] DEBUG nextflow.Session - Session await
+Mar-21 10:25:10.402 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar-21 10:25:10.402 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-21 10:25:10.409 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Mar-21 10:25:10.640 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar-21 10:25:10.657 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

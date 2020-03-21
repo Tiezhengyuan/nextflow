@@ -1,0 +1,103 @@
+Mar-21 10:36:05.976 [main] DEBUG nextflow.cli.Launcher - $> nextflow run readFasta.nf
+Mar-21 10:36:06.131 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-21 10:36:06.148 [main] INFO  nextflow.cli.CmdRun - Launching `readFasta.nf` [stupefied_ramanujan] - revision: aedb485fea
+Mar-21 10:36:06.303 [main] DEBUG nextflow.Session - Session uuid: 7a10b069-5c21-48fe-86d8-e8db156204e5
+Mar-21 10:36:06.303 [main] DEBUG nextflow.Session - Run name: stupefied_ramanujan
+Mar-21 10:36:06.306 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-21 10:36:06.355 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.01.0 build 5264
+  Created: 12-02-2020 10:14 UTC (05:14 EDT)
+  System: Linux 4.15.0-20-generic
+  Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 32587@yuan-desktop [127.0.1.1]
+  CPUs: 8 - Mem: 15.6 GB (3.2 GB) - Swap: 372.5 GB (372.5 GB)
+Mar-21 10:36:06.390 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_fromFile/work [ext2/ext3]
+Mar-21 10:36:06.391 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_fromFile/bin
+Mar-21 10:36:06.421 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-21 10:36:06.425 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-21 10:36:06.829 [main] DEBUG nextflow.Session - Session start invoked
+Mar-21 10:36:07.444 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-21 10:36:07.459 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: alignment
+Mar-21 10:36:07.460 [main] WARN  nextflow.script.BaseScript - The use of `echo` method is deprecated
+Mar-21 10:36:07.654 [Actor Thread 1] DEBUG n.splitter.AbstractTextSplitter - Splitter `Fasta` collector path: nextflow.splitter.TextFileCollector$CachePath(/home/yuan/project/nextflow/nf_fromFile/work/56/e67aae908071711de2756820575903/pa232.fa, null)
+Mar-21 10:36:07.750 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-21 10:36:07.751 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-21 10:36:07.760 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-21 10:36:07.769 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.6 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar-21 10:36:07.871 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > alignment -- maxForks: 8; blocking: false
+Mar-21 10:36:07.908 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar-21 10:36:07.909 [main] DEBUG nextflow.Session - Session await
+Mar-21 10:36:08.319 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:36:08.336 [Task submitter] INFO  nextflow.Session - [d0/99f4e9] Submitted process > alignment (8)
+Mar-21 10:36:08.353 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:36:08.353 [Task submitter] INFO  nextflow.Session - [59/d0fe38] Submitted process > alignment (5)
+Mar-21 10:36:08.360 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:36:08.367 [Task submitter] INFO  nextflow.Session - [73/e47f75] Submitted process > alignment (3)
+Mar-21 10:36:08.374 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:36:08.408 [Task submitter] INFO  nextflow.Session - [e2/c3d09e] Submitted process > alignment (10)
+Mar-21 10:36:08.425 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:36:08.448 [Task submitter] INFO  nextflow.Session - [94/48b19a] Submitted process > alignment (4)
+Mar-21 10:36:08.453 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:36:08.466 [Task submitter] INFO  nextflow.Session - [04/dd7c71] Submitted process > alignment (6)
+Mar-21 10:36:08.472 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:36:08.474 [Task submitter] INFO  nextflow.Session - [9e/247049] Submitted process > alignment (12)
+Mar-21 10:36:08.481 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:36:08.488 [Task submitter] INFO  nextflow.Session - [3d/bb3dcb] Submitted process > alignment (2)
+Mar-21 10:36:08.502 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: alignment (5); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_fromFile/work/59/d0fe384eb6153ec9a07c5e8bfe6803]
+Mar-21 10:36:08.508 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:36:08.508 [Task submitter] INFO  nextflow.Session - [eb/fe2d8e] Submitted process > alignment (1)
+Mar-21 10:36:08.527 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process `alignment (5)` is unable to find [UnixPath]: `/home/yuan/project/nextflow/nf_fromFile/work/59/d0fe384eb6153ec9a07c5e8bfe6803/hit_file` (pattern: `hit_file`)
+Mar-21 10:36:08.575 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'alignment (5)'
+
+Caused by:
+  Missing output file(s) `hit_file` expected by process `alignment (5)`
+
+Command executed:
+
+  echo "aligner --query query_file > hit_file"
+
+Command exit status:
+  0
+
+Command output:
+  aligner --query query_file > hit_file
+
+Work dir:
+  /home/yuan/project/nextflow/nf_fromFile/work/59/d0fe384eb6153ec9a07c5e8bfe6803
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Mar-21 10:36:08.596 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Missing output file(s) `hit_file` expected by process `alignment (5)`
+Mar-21 10:36:08.634 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
+[process] alignment
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: query_file
+  port 1: (cntrl) -     ; channel: $
+
+Mar-21 10:36:08.636 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar-21 10:36:08.636 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-21 10:36:08.643 [main] WARN  n.processor.TaskPollingMonitor - Killing pending tasks (8)
+Mar-21 10:36:08.646 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: alignment (3); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_fromFile/work/73/e47f751eec4b8a33310e9d84022527]
+Mar-21 10:36:08.652 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process `alignment (3)` is unable to find [UnixPath]: `/home/yuan/project/nextflow/nf_fromFile/work/73/e47f751eec4b8a33310e9d84022527/hit_file` (pattern: `hit_file`)
+Mar-21 10:36:08.657 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: alignment (10); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_fromFile/work/e2/c3d09e164775a6fc99f438f2bcb6e5]
+Mar-21 10:36:08.658 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process `alignment (10)` is unable to find [UnixPath]: `/home/yuan/project/nextflow/nf_fromFile/work/e2/c3d09e164775a6fc99f438f2bcb6e5/hit_file` (pattern: `hit_file`)
+Mar-21 10:36:08.661 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: alignment (4); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_fromFile/work/94/48b19a60d02e922fb00f7387b8fdfa]
+Mar-21 10:36:08.663 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process `alignment (4)` is unable to find [UnixPath]: `/home/yuan/project/nextflow/nf_fromFile/work/94/48b19a60d02e922fb00f7387b8fdfa/hit_file` (pattern: `hit_file`)
+Mar-21 10:36:08.670 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: alignment (6); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_fromFile/work/04/dd7c71e98cd02c70567efefcc52647]
+Mar-21 10:36:08.670 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process `alignment (6)` is unable to find [UnixPath]: `/home/yuan/project/nextflow/nf_fromFile/work/04/dd7c71e98cd02c70567efefcc52647/hit_file` (pattern: `hit_file`)
+Mar-21 10:36:08.676 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: alignment (12); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_fromFile/work/9e/247049b7eb2e3f4fa1da64608ed84e]
+Mar-21 10:36:08.680 [main] DEBUG nextflow.executor.LocalTaskHandler - Unable to kill alignment (8) -- command: kill -TERM 32700; exit: 1 
+ bash: line 0: kill: (32700) - No such process
+
+Mar-21 10:36:08.683 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process `alignment (12)` is unable to find [UnixPath]: `/home/yuan/project/nextflow/nf_fromFile/work/9e/247049b7eb2e3f4fa1da64608ed84e/hit_file` (pattern: `hit_file`)
+Mar-21 10:36:08.687 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: alignment (2); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_fromFile/work/3d/bb3dcb29494911200b9b2dfee3b598]
+Mar-21 10:36:08.689 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process `alignment (2)` is unable to find [UnixPath]: `/home/yuan/project/nextflow/nf_fromFile/work/3d/bb3dcb29494911200b9b2dfee3b598/hit_file` (pattern: `hit_file`)
+Mar-21 10:36:08.696 [main] DEBUG nextflow.executor.LocalTaskHandler - Unable to kill alignment (2) -- command: kill -TERM 304; exit: 1 
+ bash: line 0: kill: (304) - No such process
+
+Mar-21 10:36:08.701 [main] DEBUG nextflow.executor.LocalTaskHandler - Unable to kill alignment (1) -- command: kill -TERM 330; exit: 1 
+ bash: line 0: kill: (330) - No such process
+
+Mar-21 10:36:08.703 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=8; ignoredCount=0; cachedCount=0; pendingCount=104; submittedCount=1; runningCount=-2; retriesCount=0; abortedCount=2; succeedDuration=0ms; failedDuration=93ms; cachedDuration=0ms;loadCpus=-2; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+Mar-21 10:36:08.798 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar-21 10:36:08.831 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -2,7 +2,7 @@
 echo true
 
 Channel
-    .fromPath('test_data/sample.txt')
+    .fromPath('../test_data/sample.txt')
     .splitText(by: 2)
     .set {text_chunk}
 

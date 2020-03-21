@@ -1,0 +1,43 @@
+Mar-21 10:25:18.815 [main] DEBUG nextflow.cli.Launcher - $> nextflow run splitText.nf
+Mar-21 10:25:18.970 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-21 10:25:18.986 [main] INFO  nextflow.cli.CmdRun - Launching `splitText.nf` [crazy_bassi] - revision: 6ac8fc701e
+Mar-21 10:25:19.126 [main] DEBUG nextflow.Session - Session uuid: bd153782-2594-4bcc-b122-3bb54ad38266
+Mar-21 10:25:19.127 [main] DEBUG nextflow.Session - Run name: crazy_bassi
+Mar-21 10:25:19.129 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-21 10:25:19.177 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.01.0 build 5264
+  Created: 12-02-2020 10:14 UTC (05:14 EDT)
+  System: Linux 4.15.0-20-generic
+  Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 31819@yuan-desktop [127.0.1.1]
+  CPUs: 8 - Mem: 15.6 GB (3 GB) - Swap: 372.5 GB (372.5 GB)
+Mar-21 10:25:19.211 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_fromFile/work [ext2/ext3]
+Mar-21 10:25:19.211 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_fromFile/bin
+Mar-21 10:25:19.262 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-21 10:25:19.266 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-21 10:25:19.606 [main] DEBUG nextflow.Session - Session start invoked
+Mar-21 10:25:20.204 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-21 10:25:20.220 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: split
+Mar-21 10:25:20.221 [main] WARN  nextflow.script.BaseScript - The use of `echo` method is deprecated
+Mar-21 10:25:20.467 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-21 10:25:20.467 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-21 10:25:20.475 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-21 10:25:20.484 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.6 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar-21 10:25:20.586 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > split -- maxForks: 8; blocking: false
+Mar-21 10:25:20.615 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar-21 10:25:20.615 [main] DEBUG nextflow.Session - Session await
+Mar-21 10:25:20.885 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:25:20.894 [Task submitter] INFO  nextflow.Session - [50/6527b4] Submitted process > split (2)
+Mar-21 10:25:20.907 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:25:20.908 [Task submitter] INFO  nextflow.Session - [21/3a4618] Submitted process > split (3)
+Mar-21 10:25:20.922 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:25:20.923 [Task submitter] INFO  nextflow.Session - [f3/1881d8] Submitted process > split (1)
+Mar-21 10:25:20.956 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: split (2); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_fromFile/work/50/6527b46b8dfe717a2757cd234c4936]
+Mar-21 10:25:20.977 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: split (3); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_fromFile/work/21/3a4618892d1771cf522792365f0a53]
+Mar-21 10:25:20.987 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: split (1); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_fromFile/work/f3/1881d8c200ba27b8c6dd04c2fa93be]
+Mar-21 10:25:20.992 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar-21 10:25:21.045 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-21 10:25:21.054 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=12ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Mar-21 10:25:21.121 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar-21 10:25:21.141 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
