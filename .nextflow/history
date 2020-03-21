@@ -1,4 +1,0 @@
-2020-03-21 09:03:01	1.9s	awesome_volta	OK	4f3070443ee20f694b82f7719706f419	6dddf0fc-58ac-4fc9-b189-1128ace28fdf	nextflow run nf_toFile/toFile.nf
-2020-03-21 09:03:36	2.5s	pensive_shockley	OK	9ca19aa0247fe0a6c02f66e2e5f24120	7cef9562-865b-4877-9d82-5f6cb73f7350	nextflow run nf_toFile/toFile.nf
-2020-03-21 09:04:22	2.6s	desperate_cori	OK	2da1e2b8c2ecaf18e8e879c6e881870f	c275444f-c497-4517-aa27-d0701a7ee393	nextflow run nf_toFile/toFile.nf
-2020-03-21 09:07:01	2.1s	tiny_brown	OK	7751ee3475c7bd523c604193f450e0c6	d8a8cb11-9fe4-4f67-a86d-3eddf595a28a	nextflow run nf_process/output_file.nf

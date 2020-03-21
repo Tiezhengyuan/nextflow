@@ -1,4 +1,7 @@
 work/
 nf_*/work/
 nf_*/nextflow/
+nf_*/.nextflow*
 .nextflow/
+.nextflow*
+
