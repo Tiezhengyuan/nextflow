@@ -1,0 +1,53 @@
+Mar-21 08:50:45.112 [main] DEBUG nextflow.cli.Launcher - $> nextflow run output_dynamicFile.nf
+Mar-21 08:50:45.345 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-21 08:50:45.364 [main] INFO  nextflow.cli.CmdRun - Launching `output_dynamicFile.nf` [naughty_gautier] - revision: 06a9e6d591
+Mar-21 08:50:45.513 [main] DEBUG nextflow.Session - Session uuid: c763e89f-7112-47f6-aed9-1df4390629d8
+Mar-21 08:50:45.514 [main] DEBUG nextflow.Session - Run name: naughty_gautier
+Mar-21 08:50:45.517 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-21 08:50:45.568 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.01.0 build 5264
+  Created: 12-02-2020 10:14 UTC (05:14 EDT)
+  System: Linux 4.15.0-20-generic
+  Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 18965@yuan-desktop [127.0.1.1]
+  CPUs: 8 - Mem: 15.6 GB (3.3 GB) - Swap: 372.5 GB (372.5 GB)
+Mar-21 08:50:45.605 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_process/work [ext2/ext3]
+Mar-21 08:50:45.605 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_process/bin
+Mar-21 08:50:45.656 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-21 08:50:45.660 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-21 08:50:46.052 [main] DEBUG nextflow.Session - Session start invoked
+Mar-21 08:50:46.718 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-21 08:50:46.732 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: filleroutHits, alignment
+Mar-21 08:50:46.733 [main] WARN  nextflow.script.BaseScript - The use of `echo` method is deprecated
+Mar-21 08:50:46.791 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: ../test_data/; pattern: *.fa; options: [:]
+Mar-21 08:50:46.920 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-21 08:50:46.921 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-21 08:50:46.930 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-21 08:50:46.940 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.6 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar-21 08:50:47.032 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > alignment -- maxForks: 8; blocking: false
+Mar-21 08:50:47.077 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-21 08:50:47.078 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-21 08:50:47.082 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > filleroutHits -- maxForks: 8; blocking: false
+Mar-21 08:50:47.156 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar-21 08:50:47.156 [main] DEBUG nextflow.Session - Session await
+Mar-21 08:50:47.345 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 08:50:47.355 [Task submitter] INFO  nextflow.Session - [09/0741a2] Submitted process > alignment (1)
+Mar-21 08:50:47.368 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 08:50:47.368 [Task submitter] INFO  nextflow.Session - [cb/af9729] Submitted process > alignment (2)
+Mar-21 08:50:47.401 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: alignment (1); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_process/work/09/0741a2eb531d6043d6a9b8c76f897d]
+Mar-21 08:50:47.425 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: alignment (2); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_process/work/cb/af972937c1e3da9251afeaf714ac7d]
+Mar-21 08:50:47.430 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 08:50:47.431 [Task submitter] INFO  nextflow.Session - [4c/0f827c] Submitted process > filleroutHits (1)
+Mar-21 08:50:47.443 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 08:50:47.445 [Task submitter] INFO  nextflow.Session - [c5/c3aba7] Submitted process > filleroutHits (2)
+Mar-21 08:50:47.468 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: filleroutHits (1); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_process/work/4c/0f827c8024bf356ca240a786ceac48]
+Mar-21 08:50:47.476 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: filleroutHits (2); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_process/work/c5/c3aba79ed0b3a78ab8117651a2ac54]
+Mar-21 08:50:47.479 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar-21 08:50:47.567 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-21 08:50:47.696 [Actor Thread 2] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 2; slices: 1; internal sort time: 0.02 s; external sort time: 0.002 s; total time: 0.022 s
+Mar-21 08:50:47.730 [Actor Thread 2] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /tmp/c6112fabcd4059d4cfb3eb43e0918f6e.collect-file
+Mar-21 08:50:47.743 [Actor Thread 2] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-14522968167100405937
+Mar-21 08:50:47.754 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=4; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=15ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Mar-21 08:50:47.948 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar-21 08:50:47.991 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

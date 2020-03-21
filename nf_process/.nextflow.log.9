@@ -1,0 +1,28 @@
+Mar-21 08:47:00.529 [main] DEBUG nextflow.cli.Launcher - $> nextflow run output_dynamicFile.nf
+Mar-21 08:47:00.777 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-21 08:47:00.796 [main] INFO  nextflow.cli.CmdRun - Launching `output_dynamicFile.nf` [irreverent_meitner] - revision: 96e6389010
+Mar-21 08:47:00.936 [main] DEBUG nextflow.Session - Session uuid: fada4071-e9d0-4d23-946b-1982b4515247
+Mar-21 08:47:00.937 [main] DEBUG nextflow.Session - Run name: irreverent_meitner
+Mar-21 08:47:00.940 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-21 08:47:00.988 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.01.0 build 5264
+  Created: 12-02-2020 10:14 UTC (05:14 EDT)
+  System: Linux 4.15.0-20-generic
+  Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 18052@yuan-desktop [127.0.1.1]
+  CPUs: 8 - Mem: 15.6 GB (3.4 GB) - Swap: 372.5 GB (372.5 GB)
+Mar-21 08:47:01.022 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_process/work [ext2/ext3]
+Mar-21 08:47:01.022 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_process/bin
+Mar-21 08:47:01.072 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-21 08:47:01.075 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-21 08:47:01.449 [main] DEBUG nextflow.Session - Session start invoked
+Mar-21 08:47:01.613 [main] ERROR nextflow.cli.Launcher - Script compilation error
+- file : /home/yuan/project/nextflow/nf_process/output_dynamicFile.nf
+- cause: Ambiguous expression could be either a parameterless closure expression or an isolated open code block;
+   solution: Add an explicit closure parameter list, e.g. {it -> ...}, or force it to be treated as an open block by giving it a label, e.g. L:{...} @ line 31, column 32.
+   res_ch.collectFile() { item -> {'../test_data/${item}.txt' }}
+                                  ^
+
+1 error
+

@@ -1,0 +1,93 @@
+Mar-21 09:17:44.804 [main] DEBUG nextflow.cli.Launcher - $> nextflow run dynamicsFiles.nf
+Mar-21 09:17:44.964 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-21 09:17:44.982 [main] INFO  nextflow.cli.CmdRun - Launching `dynamicsFiles.nf` [shrivelled_lamarck] - revision: 9d2af10da3
+Mar-21 09:17:45.140 [main] DEBUG nextflow.Session - Session uuid: 71fe5dfe-0f3d-4231-acf1-5a06a0fa173e
+Mar-21 09:17:45.140 [main] DEBUG nextflow.Session - Run name: shrivelled_lamarck
+Mar-21 09:17:45.144 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-21 09:17:45.198 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.01.0 build 5264
+  Created: 12-02-2020 10:14 UTC (05:14 EDT)
+  System: Linux 4.15.0-20-generic
+  Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 21774@yuan-desktop [127.0.1.1]
+  CPUs: 8 - Mem: 15.6 GB (3.3 GB) - Swap: 372.5 GB (372.5 GB)
+Mar-21 09:17:45.239 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_toFile/work [ext2/ext3]
+Mar-21 09:17:45.240 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_toFile/bin
+Mar-21 09:17:45.274 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-21 09:17:45.277 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-21 09:17:45.607 [main] DEBUG nextflow.Session - Session start invoked
+Mar-21 09:17:46.171 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-21 09:17:46.194 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: 
+Mar-21 09:17:46.350 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar-21 09:17:46.351 [main] DEBUG nextflow.Session - Session await
+Mar-21 09:17:46.351 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar-21 09:17:46.351 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-21 09:17:46.692 [Actor Thread 1] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 5; slices: 1; internal sort time: 0.025 s; external sort time: 0.003 s; total time: 0.028 s
+Mar-21 09:17:46.727 [Actor Thread 1] ERROR nextflow.extension.OperatorEx - @unknown
+java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_toFile/work/tmp/fe/e14b603ef0cffe9d9cbdfb456d8a22/../test_data/B.txt
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:219)
+	at nextflow.file.SortFileCollector.saveFile(SortFileCollector.groovy:331)
+	at nextflow.file.FileCollector.saveTo0(FileCollector.groovy:227)
+	at nextflow.file.FileCollector.saveTo(FileCollector.groovy:249)
+	at nextflow.file.FileCollector$saveTo.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at nextflow.extension.CollectFileOp.emitItems(CollectFileOp.groovy:190)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1050)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1092)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at groovy.lang.Closure.call(Closure.java:421)
+	at groovy.lang.Closure$call.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at nextflow.extension.DataflowHelper$3.afterStop(DataflowHelper.groovy:258)
+	at groovyx.gpars.dataflow.operator.DataflowProcessor.fireAfterStop(DataflowProcessor.java:324)
+	at groovyx.gpars.dataflow.operator.DataflowProcessorActor.afterStop(DataflowProcessorActor.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePojoMethod(InvokerHelper.java:999)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:990)
+	at groovyx.gpars.actor.Actor.callDynamic(Actor.java:369)
+	at groovyx.gpars.actor.Actor.handleTermination(Actor.java:320)
+	at groovyx.gpars.actor.AbstractLoopingActor.terminate(AbstractLoopingActor.java:204)
+	at groovyx.gpars.dataflow.operator.DataflowProcessor.terminate(DataflowProcessor.java:147)
+	at groovyx.gpars.dataflow.operator.DataflowProcessorActor.checkPoison(DataflowProcessorActor.java:115)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.onMessage(DataflowOperatorActor.java:83)
+	at groovyx.gpars.actor.impl.SDAClosure$1.call(SDAClosure.java:43)
+	at groovyx.gpars.actor.AbstractLoopingActor.runEnhancedWithoutRepliesOnMessages(AbstractLoopingActor.java:293)
+	at groovyx.gpars.actor.AbstractLoopingActor.access$400(AbstractLoopingActor.java:30)
+	at groovyx.gpars.actor.AbstractLoopingActor$1.handleMessage(AbstractLoopingActor.java:93)
+	at groovyx.gpars.util.AsyncMessagingCore.run(AsyncMessagingCore.java:132)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Mar-21 09:17:46.755 [Actor Thread 1] DEBUG nextflow.Session - Session aborted -- Cause: /home/yuan/project/nextflow/nf_toFile/work/tmp/fe/e14b603ef0cffe9d9cbdfb456d8a22/../test_data/B.txt
+Mar-21 09:17:46.795 [Actor Thread 1] DEBUG nextflow.Session - The following nodes are still active:
+  [operator] subscribe
+
+Mar-21 09:17:46.809 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Mar-21 09:17:46.846 [main] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-15953667941467936072
+Mar-21 09:17:46.852 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar-21 09:17:46.872 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
