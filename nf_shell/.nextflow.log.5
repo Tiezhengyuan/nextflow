@@ -1,0 +1,73 @@
+Mar-21 14:18:08.862 [main] DEBUG nextflow.cli.Launcher - $> nextflow run toUpperCase2.nf
+Mar-21 14:18:09.039 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-21 14:18:09.062 [main] INFO  nextflow.cli.CmdRun - Launching `toUpperCase2.nf` [suspicious_ride] - revision: c5b1ccf165
+Mar-21 14:18:09.228 [main] DEBUG nextflow.Session - Session uuid: 48523d41-5483-4d74-b06d-92c57e06017d
+Mar-21 14:18:09.228 [main] DEBUG nextflow.Session - Run name: suspicious_ride
+Mar-21 14:18:09.231 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-21 14:18:09.284 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.01.0 build 5264
+  Created: 12-02-2020 10:14 UTC (05:14 EDT)
+  System: Linux 4.15.0-20-generic
+  Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 18458@yuan-desktop [127.0.1.1]
+  CPUs: 8 - Mem: 15.6 GB (2.2 GB) - Swap: 372.5 GB (372.5 GB)
+Mar-21 14:18:09.321 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_shell/work [ext2/ext3]
+Mar-21 14:18:09.322 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_shell/bin
+Mar-21 14:18:09.358 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-21 14:18:09.361 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-21 14:18:09.663 [main] DEBUG nextflow.Session - Session start invoked
+Mar-21 14:18:10.300 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-21 14:18:10.315 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: convertToUpper, splitLetters
+Mar-21 14:18:10.316 [main] WARN  nextflow.script.BaseScript - The use of `echo` method is deprecated
+Mar-21 14:18:10.569 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-21 14:18:10.569 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-21 14:18:10.577 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-21 14:18:10.586 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.6 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar-21 14:18:10.670 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > splitLetters -- maxForks: 8; blocking: false
+Mar-21 14:18:10.707 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-21 14:18:10.707 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-21 14:18:10.710 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > convertToUpper -- maxForks: 8; blocking: false
+Mar-21 14:18:10.719 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar-21 14:18:10.719 [main] DEBUG nextflow.Session - Session await
+Mar-21 14:18:11.014 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:18:11.023 [Task submitter] INFO  nextflow.Session - [80/ce9b7b] Submitted process > splitLetters (4)
+Mar-21 14:18:11.034 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:18:11.034 [Task submitter] INFO  nextflow.Session - [ba/1e93e1] Submitted process > splitLetters (1)
+Mar-21 14:18:11.046 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:18:11.047 [Task submitter] INFO  nextflow.Session - [3d/c236d3] Submitted process > splitLetters (2)
+Mar-21 14:18:11.054 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:18:11.060 [Task submitter] INFO  nextflow.Session - [6f/f5a268] Submitted process > splitLetters (6)
+Mar-21 14:18:11.067 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:18:11.068 [Task submitter] INFO  nextflow.Session - [b3/5e4d84] Submitted process > splitLetters (5)
+Mar-21 14:18:11.072 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: splitLetters (4); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_shell/work/80/ce9b7baacac70fed0ed92b858c2ce1]
+Mar-21 14:18:11.075 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:18:11.076 [Task submitter] INFO  nextflow.Session - [c5/88b336] Submitted process > splitLetters (3)
+Mar-21 14:18:11.116 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: splitLetters (1); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_shell/work/ba/1e93e1b155a173b2e904e10e3dc54c]
+Mar-21 14:18:11.124 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:18:11.125 [Task submitter] INFO  nextflow.Session - [fc/1a784e] Submitted process > convertToUpper (1)
+Mar-21 14:18:11.130 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: splitLetters (2); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_shell/work/3d/c236d3d73dca6d65a57d6aaf9cb2fc]
+Mar-21 14:18:11.139 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:18:11.179 [Task submitter] INFO  nextflow.Session - [6c/0611a4] Submitted process > convertToUpper (2)
+Mar-21 14:18:11.186 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:18:11.187 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: splitLetters (6); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_shell/work/6f/f5a2689b5415a4cc9d0fb08ced4f19]
+Mar-21 14:18:11.188 [Task submitter] INFO  nextflow.Session - [a5/ed13b1] Submitted process > convertToUpper (3)
+Mar-21 14:18:11.200 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: splitLetters (5); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_shell/work/b3/5e4d8486930dfa42d39f8c47d51215]
+Mar-21 14:18:11.220 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:18:11.220 [Task submitter] INFO  nextflow.Session - [af/2ea730] Submitted process > convertToUpper (4)
+Mar-21 14:18:11.221 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: splitLetters (3); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_shell/work/c5/88b3360e2a119b5d4d537daf091b0d]
+Mar-21 14:18:11.229 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:18:11.230 [Task submitter] INFO  nextflow.Session - [69/bdcfe0] Submitted process > convertToUpper (5)
+Mar-21 14:18:11.234 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: convertToUpper (1); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_shell/work/fc/1a784eac7770bc2d6819046ac08546]
+Mar-21 14:18:11.238 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:18:11.245 [Task submitter] INFO  nextflow.Session - [2a/98e4e8] Submitted process > convertToUpper (6)
+Mar-21 14:18:11.256 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: convertToUpper (2); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_shell/work/6c/0611a4e93df5047bf1394fd7435903]
+Mar-21 14:18:11.284 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: convertToUpper (3); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_shell/work/a5/ed13b1c8ae15cb39f60cbcf3ce6c03]
+Mar-21 14:18:11.287 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: convertToUpper (4); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_shell/work/af/2ea730415636b2ea4232b550ef927c]
+Mar-21 14:18:11.290 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: convertToUpper (5); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_shell/work/69/bdcfe096f9bb93d8499971d40b0736]
+Mar-21 14:18:11.294 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: convertToUpper (6); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_shell/work/2a/98e4e8dd26dedc6fc703d38558fbd7]
+Mar-21 14:18:11.296 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar-21 14:18:11.383 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-21 14:18:11.395 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=12; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=130ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=4; peakCpus=4; peakMemory=0; ]
+Mar-21 14:18:11.602 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar-21 14:18:11.630 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

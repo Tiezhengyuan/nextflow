@@ -9,3 +9,5 @@
 2020-03-21 09:20:35	2.4s	marvelous_shannon	OK	e77076a1d930b9c296c5d2c0b1e1368b	3813ace9-1724-43dd-a18b-69d75ebdbf72	nextflow run createTxt.nf
 2020-03-21 09:24:04	-	sharp_ride	-	fe7bd1ee659767ed2de9de99c76cb8e0	e9c61949-4c8d-4fc9-8ff1-74d3182b306a	nextflow run dynamicsFiles2.nf
 2020-03-21 09:25:01	-	sad_keller	-	da189e05c5daefd2b21201a8553c088c	6a9c532e-c1a8-41c0-a2cb-85aafa3c5a3b	nextflow run dynamicsFiles2.nf
+2020-03-21 12:36:28	2.8s	festering_williams	OK	2b102640d6532fe6a7e32714b6e2ef21	f901c3d9-ec63-4c47-a94c-f69314af6140	nextflow run output_file.nf
+2020-03-21 12:36:49	1.8s	dreamy_visvesvaraya	OK	fa9d47d004f5987e785cb9433d506acf	7961152c-ddbd-4497-a3da-2538afc1c23d	nextflow run dynamicsFiles1.nf

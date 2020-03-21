@@ -1,38 +1,31 @@
-Mar-21 09:14:19.641 [main] DEBUG nextflow.cli.Launcher - $> nextflow run createTxt.nf
-Mar-21 09:14:19.796 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
-Mar-21 09:14:19.814 [main] INFO  nextflow.cli.CmdRun - Launching `createTxt.nf` [mighty_celsius] - revision: e77076a1d9
-Mar-21 09:14:19.949 [main] DEBUG nextflow.Session - Session uuid: 76445c59-f259-4b76-b5b2-54e68a1e739c
-Mar-21 09:14:19.949 [main] DEBUG nextflow.Session - Run name: mighty_celsius
-Mar-21 09:14:19.952 [main] DEBUG nextflow.Session - Executor pool size: 8
-Mar-21 09:14:20.010 [main] DEBUG nextflow.cli.CmdRun - 
+Mar-21 09:16:19.383 [main] DEBUG nextflow.cli.Launcher - $> nextflow run dynamicsFiles.nf
+Mar-21 09:16:19.529 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-21 09:16:19.548 [main] INFO  nextflow.cli.CmdRun - Launching `dynamicsFiles.nf` [thirsty_noether] - revision: 5bc2d6a26e
+Mar-21 09:16:19.697 [main] DEBUG nextflow.Session - Session uuid: 7f71fc06-f11b-4a9f-970e-9b89e34c8f39
+Mar-21 09:16:19.697 [main] DEBUG nextflow.Session - Run name: thirsty_noether
+Mar-21 09:16:19.700 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-21 09:16:19.750 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 20.01.0 build 5264
   Created: 12-02-2020 10:14 UTC (05:14 EDT)
   System: Linux 4.15.0-20-generic
   Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
   Encoding: UTF-8 (UTF-8)
-  Process: 21077@yuan-desktop [127.0.1.1]
-  CPUs: 8 - Mem: 15.6 GB (3.3 GB) - Swap: 372.5 GB (372.5 GB)
-Mar-21 09:14:20.060 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_toFile/work [ext2/ext3]
-Mar-21 09:14:20.060 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_toFile/bin
-Mar-21 09:14:20.090 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
-Mar-21 09:14:20.093 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Mar-21 09:14:20.397 [main] DEBUG nextflow.Session - Session start invoked
-Mar-21 09:14:20.997 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Mar-21 09:14:21.018 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: text
-Mar-21 09:14:21.019 [main] WARN  nextflow.script.BaseScript - The use of `echo` method is deprecated
-Mar-21 09:14:21.118 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Mar-21 09:14:21.119 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Mar-21 09:14:21.126 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Mar-21 09:14:21.133 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.6 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
-Mar-21 09:14:21.267 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > text -- maxForks: 8; blocking: false
-Mar-21 09:14:21.305 [main] WARN  nextflow.script.params.BaseOutParam - Output channel `files` overrides another variable with the same name declared in the script context -- Rename it to avoid possible conflicts
-Mar-21 09:14:21.332 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
-Mar-21 09:14:21.332 [main] DEBUG nextflow.Session - Session await
-Mar-21 09:14:21.588 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-21 09:14:21.597 [Task submitter] INFO  nextflow.Session - [c5/0e0f74] Submitted process > text
-Mar-21 09:14:21.645 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: text; status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_toFile/work/c5/0e0f74d89b6cb21e690abca3f413d7]
-Mar-21 09:14:21.694 [main] DEBUG nextflow.Session - Session await > all process finished
-Mar-21 09:14:21.722 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Mar-21 09:14:21.736 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=12ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
-Mar-21 09:14:21.894 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
-Mar-21 09:14:21.912 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+  Process: 21516@yuan-desktop [127.0.1.1]
+  CPUs: 8 - Mem: 15.6 GB (3.2 GB) - Swap: 372.5 GB (372.5 GB)
+Mar-21 09:16:19.793 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_toFile/work [ext2/ext3]
+Mar-21 09:16:19.793 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_toFile/bin
+Mar-21 09:16:19.825 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-21 09:16:19.829 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-21 09:16:20.240 [main] DEBUG nextflow.Session - Session start invoked
+Mar-21 09:16:20.829 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-21 09:16:20.853 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: 
+Mar-21 09:16:21.006 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar-21 09:16:21.006 [main] DEBUG nextflow.Session - Session await
+Mar-21 09:16:21.006 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar-21 09:16:21.006 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-21 09:16:21.338 [Actor Thread 1] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 5; slices: 1; internal sort time: 0.024 s; external sort time: 0.004 s; total time: 0.028 s
+Mar-21 09:16:21.383 [Actor Thread 1] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /tmp/0b80ad222fffc1978a830434f2076867.collect-file
+Mar-21 09:16:21.402 [Actor Thread 1] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-13970425477039734515
+Mar-21 09:16:21.418 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Mar-21 09:16:21.475 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar-21 09:16:21.500 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

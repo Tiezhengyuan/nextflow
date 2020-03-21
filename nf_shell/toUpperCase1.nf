@@ -8,7 +8,7 @@ process splitLetters {
     file 'chunk_*' into letters
 
     """
-    printf '${params.str}' | split -b 6 - chunk_
+    echo '${params.str}' | split -b 6 chunk_
     """
 }
 

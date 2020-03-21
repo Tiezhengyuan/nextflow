@@ -1,0 +1,90 @@
+Mar-21 14:20:42.263 [main] DEBUG nextflow.cli.Launcher - $> nextflow run toUpperCase2.nf
+Mar-21 14:20:42.451 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-21 14:20:42.471 [main] INFO  nextflow.cli.CmdRun - Launching `toUpperCase2.nf` [ecstatic_waddington] - revision: 522d04fdf6
+Mar-21 14:20:42.631 [main] DEBUG nextflow.Session - Session uuid: 0ff2cf3e-05bc-469f-8ad2-461cd6f20ded
+Mar-21 14:20:42.631 [main] DEBUG nextflow.Session - Run name: ecstatic_waddington
+Mar-21 14:20:42.635 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-21 14:20:42.690 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.01.0 build 5264
+  Created: 12-02-2020 10:14 UTC (05:14 EDT)
+  System: Linux 4.15.0-20-generic
+  Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 19600@yuan-desktop [127.0.1.1]
+  CPUs: 8 - Mem: 15.6 GB (2.2 GB) - Swap: 372.5 GB (372.5 GB)
+Mar-21 14:20:42.727 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_shell/work [ext2/ext3]
+Mar-21 14:20:42.728 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_shell/bin
+Mar-21 14:20:42.778 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-21 14:20:42.781 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-21 14:20:43.159 [main] DEBUG nextflow.Session - Session start invoked
+Mar-21 14:20:43.801 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-21 14:20:43.814 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: convertToUpper, splitLetters
+Mar-21 14:20:43.815 [main] WARN  nextflow.script.BaseScript - The use of `echo` method is deprecated
+Mar-21 14:20:44.065 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-21 14:20:44.066 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-21 14:20:44.074 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-21 14:20:44.082 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.6 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar-21 14:20:44.179 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > splitLetters -- maxForks: 8; blocking: false
+Mar-21 14:20:44.217 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-21 14:20:44.217 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-21 14:20:44.223 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > convertToUpper -- maxForks: 8; blocking: false
+Mar-21 14:20:44.237 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar-21 14:20:44.237 [main] DEBUG nextflow.Session - Session await
+Mar-21 14:20:44.560 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:20:44.570 [Task submitter] INFO  nextflow.Session - [2a/d1ed09] Submitted process > splitLetters (2)
+Mar-21 14:20:44.582 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:20:44.583 [Task submitter] INFO  nextflow.Session - [d5/089503] Submitted process > splitLetters (4)
+Mar-21 14:20:44.596 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:20:44.599 [Task submitter] INFO  nextflow.Session - [c8/b5a8a2] Submitted process > splitLetters (5)
+Mar-21 14:20:44.612 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: splitLetters (2); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_shell/work/2a/d1ed09a1b09fe21cb841a87e4ba0e2]
+Mar-21 14:20:44.613 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:20:44.614 [Task submitter] INFO  nextflow.Session - [8b/47cc41] Submitted process > splitLetters (1)
+Mar-21 14:20:44.621 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:20:44.622 [Task submitter] INFO  nextflow.Session - [74/a5dc35] Submitted process > splitLetters (3)
+Mar-21 14:20:44.630 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 14:20:44.634 [Task submitter] INFO  nextflow.Session - [b1/dd4228] Submitted process > splitLetters (6)
+Mar-21 14:20:44.673 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'splitLetters (2)'
+
+Caused by:
+  Missing output file(s) `chunk_*` expected by process `splitLetters (2)`
+
+Command executed:
+
+  cat input.1
+
+Command exit status:
+  0
+
+Command output:
+  abcde2
+
+Work dir:
+  /home/yuan/project/nextflow/nf_shell/work/2a/d1ed09a1b09fe21cb841a87e4ba0e2
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Mar-21 14:20:44.684 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Missing output file(s) `chunk_*` expected by process `splitLetters (2)`
+Mar-21 14:20:44.715 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
+[process] convertToUpper
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: x
+  port 1: (cntrl) -     ; channel: $
+
+Mar-21 14:20:44.718 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar-21 14:20:44.719 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-21 14:20:44.724 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: splitLetters (4); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_shell/work/d5/089503cfe395776e42ba5569c673cc]
+Mar-21 14:20:44.733 [main] WARN  n.processor.TaskPollingMonitor - Killing pending tasks (4)
+Mar-21 14:20:44.743 [main] DEBUG nextflow.executor.LocalTaskHandler - Unable to kill splitLetters (5) -- command: kill -TERM 19729; exit: 1 
+ bash: line 0: kill: (19729) - No such process
+
+Mar-21 14:20:44.748 [main] DEBUG nextflow.executor.LocalTaskHandler - Unable to kill splitLetters (1) -- command: kill -TERM 19734; exit: 1 
+ bash: line 0: kill: (19734) - No such process
+
+Mar-21 14:20:44.753 [main] DEBUG nextflow.executor.LocalTaskHandler - Unable to kill splitLetters (3) -- command: kill -TERM 19749; exit: 1 
+ bash: line 0: kill: (19749) - No such process
+
+Mar-21 14:20:44.759 [main] DEBUG nextflow.executor.LocalTaskHandler - Unable to kill splitLetters (6) -- command: kill -TERM 19759; exit: 1 
+ bash: line 0: kill: (19759) - No such process
+
+Mar-21 14:20:44.761 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=2; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=4; runningCount=-4; retriesCount=0; abortedCount=4; succeedDuration=0ms; failedDuration=7ms; cachedDuration=0ms;loadCpus=-4; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Mar-21 14:20:44.895 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar-21 14:20:44.918 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

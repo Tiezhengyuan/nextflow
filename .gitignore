@@ -1,6 +1,4 @@
 work/
-nf_channel/work/
-nf_fromFile/work/
-nf_operators/work/
-nf_process/work/
-nf_toFile/work/
+nf_*/work/
+nf_*/nextflow/
+.nextflow/
