@@ -1,8 +1,10 @@
 #!/usr/bin/env nextflow
 echo true
 
+//get file using fromPath90
+
 Channel
-    .fromPath('test_data/*_R1*.fq', type: 'file')
+    .fromPath('../test_data/*_R1*.fq', type: 'file')
     .set {fq_files}
 
 process print1{
@@ -16,6 +18,5 @@ process print1{
     
    
 }
-println fq_files
 
 

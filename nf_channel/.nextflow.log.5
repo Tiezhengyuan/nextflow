@@ -1,0 +1,41 @@
+Mar-21 09:59:42.731 [main] DEBUG nextflow.cli.Launcher - $> nextflow run subscribe.nf
+Mar-21 09:59:42.921 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-21 09:59:42.941 [main] INFO  nextflow.cli.CmdRun - Launching `subscribe.nf` [golden_gates] - revision: efb67f2096
+Mar-21 09:59:43.080 [main] DEBUG nextflow.Session - Session uuid: 15450cc3-46d9-438d-ba92-316f5d60d784
+Mar-21 09:59:43.080 [main] DEBUG nextflow.Session - Run name: golden_gates
+Mar-21 09:59:43.083 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-21 09:59:43.131 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.01.0 build 5264
+  Created: 12-02-2020 10:14 UTC (05:14 EDT)
+  System: Linux 4.15.0-20-generic
+  Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 26905@yuan-desktop [127.0.1.1]
+  CPUs: 8 - Mem: 15.6 GB (3.2 GB) - Swap: 372.5 GB (372.5 GB)
+Mar-21 09:59:43.167 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_channel/work [ext2/ext3]
+Mar-21 09:59:43.167 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_channel/bin
+Mar-21 09:59:43.228 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-21 09:59:43.232 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-21 09:59:43.628 [main] DEBUG nextflow.Session - Session start invoked
+Mar-21 09:59:44.218 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-21 09:59:44.238 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: 
+Mar-21 09:59:44.378 [main] DEBUG nextflow.Session - Session aborted -- Cause: No signature of method: Script_2f8ced69.subscribe() is applicable for argument types: (Script_2f8ced69$_runScript_closure3) values: [Script_2f8ced69$_runScript_closure3@35c12c7a]
+Mar-21 09:59:44.433 [main] ERROR nextflow.cli.Launcher - @unknown
+groovy.lang.MissingMethodException: No signature of method: Script_2f8ced69.subscribe() is applicable for argument types: (Script_2f8ced69$_runScript_closure3) values: [Script_2f8ced69$_runScript_closure3@35c12c7a]
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:70)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:76)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:146)
+	at nextflow.script.BaseScript.invokeMethod(BaseScript.groovy:148)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:70)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at Script_2f8ced69.runScript(Script_2f8ced69:15)
+	at nextflow.script.BaseScript.runDsl1(BaseScript.groovy:153)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:189)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:225)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:218)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:126)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:273)
+	at nextflow.cli.Launcher.run(Launcher.groovy:460)
+	at nextflow.cli.Launcher.main(Launcher.groovy:642)

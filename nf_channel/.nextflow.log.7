@@ -1,0 +1,40 @@
+Mar-21 09:57:18.640 [main] DEBUG nextflow.cli.Launcher - $> nextflow run subscribe.nf
+Mar-21 09:57:18.810 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-21 09:57:18.823 [main] INFO  nextflow.cli.CmdRun - Launching `subscribe.nf` [astonishing_cuvier] - revision: a901c2a1ee
+Mar-21 09:57:18.960 [main] DEBUG nextflow.Session - Session uuid: f3c740fe-d8a2-4270-a544-67085689b654
+Mar-21 09:57:18.961 [main] DEBUG nextflow.Session - Run name: astonishing_cuvier
+Mar-21 09:57:18.964 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-21 09:57:19.010 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.01.0 build 5264
+  Created: 12-02-2020 10:14 UTC (05:14 EDT)
+  System: Linux 4.15.0-20-generic
+  Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 26611@yuan-desktop [127.0.1.1]
+  CPUs: 8 - Mem: 15.6 GB (3.2 GB) - Swap: 372.5 GB (372.5 GB)
+Mar-21 09:57:19.043 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_channel/work [ext2/ext3]
+Mar-21 09:57:19.044 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_channel/bin
+Mar-21 09:57:19.074 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-21 09:57:19.078 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-21 09:57:19.442 [main] DEBUG nextflow.Session - Session start invoked
+Mar-21 09:57:19.982 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-21 09:57:20.009 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: 
+Mar-21 09:57:20.161 [main] DEBUG nextflow.Session - Session aborted -- Cause: Cannot invoke method subscribe() on null object
+Mar-21 09:57:20.202 [main] ERROR nextflow.cli.Launcher - @unknown
+java.lang.NullPointerException: Cannot invoke method subscribe() on null object
+	at org.codehaus.groovy.runtime.NullObject.invokeMethod(NullObject.java:91)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.NullCallSite.call(NullCallSite.java:34)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at Script_d9ce0d2d.runScript(Script_d9ce0d2d:7)
+	at nextflow.script.BaseScript.runDsl1(BaseScript.groovy:153)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:189)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:225)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:218)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:126)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:273)
+	at nextflow.cli.Launcher.run(Launcher.groovy:460)
+	at nextflow.cli.Launcher.main(Launcher.groovy:642)

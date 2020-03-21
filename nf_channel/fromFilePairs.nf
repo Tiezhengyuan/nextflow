@@ -2,7 +2,7 @@
 echo true
 
 Channel
-    .fromFilePairs('test_data/*{1,2}.fq')
+    .fromFilePairs('../test_data/*{1,2}.fq')
     .set { samples_ch }
 println samples_ch
 process getPairs {

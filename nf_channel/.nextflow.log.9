@@ -1,0 +1,38 @@
+Mar-21 09:56:44.660 [main] DEBUG nextflow.cli.Launcher - $> nextflow run subscribe.nf
+Mar-21 09:56:44.863 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-21 09:56:44.880 [main] INFO  nextflow.cli.CmdRun - Launching `subscribe.nf` [thirsty_bartik] - revision: f912df84b8
+Mar-21 09:56:45.030 [main] DEBUG nextflow.Session - Session uuid: a84ec8a9-25af-42d1-8a21-803d00c898b0
+Mar-21 09:56:45.030 [main] DEBUG nextflow.Session - Run name: thirsty_bartik
+Mar-21 09:56:45.033 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-21 09:56:45.089 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.01.0 build 5264
+  Created: 12-02-2020 10:14 UTC (05:14 EDT)
+  System: Linux 4.15.0-20-generic
+  Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 26386@yuan-desktop [127.0.1.1]
+  CPUs: 8 - Mem: 15.6 GB (3.2 GB) - Swap: 372.5 GB (372.5 GB)
+Mar-21 09:56:45.127 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_channel/work [ext2/ext3]
+Mar-21 09:56:45.128 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_channel/bin
+Mar-21 09:56:45.165 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-21 09:56:45.170 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-21 09:56:45.524 [main] DEBUG nextflow.Session - Session start invoked
+Mar-21 09:56:46.008 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-21 09:56:46.029 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: 
+Mar-21 09:56:46.106 [main] DEBUG nextflow.Session - Session aborted -- Cause: No signature of method: groovyx.gpars.dataflow.DataflowQueue.subsribe() is applicable for argument types: (Script_cf61fe8a$_runScript_closure1) values: [Script_cf61fe8a$_runScript_closure1@5d51e129]
+Mar-21 09:56:46.131 [main] ERROR nextflow.cli.Launcher - @unknown
+groovy.lang.MissingMethodException: No signature of method: groovyx.gpars.dataflow.DataflowQueue.subsribe() is applicable for argument types: (Script_cf61fe8a$_runScript_closure1) values: [Script_cf61fe8a$_runScript_closure1@5d51e129]
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:70)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaClassSite.call(PojoMetaClassSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at Script_cf61fe8a.runScript(Script_cf61fe8a:3)
+	at nextflow.script.BaseScript.runDsl1(BaseScript.groovy:153)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:189)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:225)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:218)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:126)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:273)
+	at nextflow.cli.Launcher.run(Launcher.groovy:460)
+	at nextflow.cli.Launcher.main(Launcher.groovy:642)
