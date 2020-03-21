@@ -1,0 +1,12 @@
+
+develop bioinformatics pipeline using NextFlow
+
+Unit testing
+	nf_channel : nf channel
+	nf_fromFile  : nf split files
+	nf_operators  : nf operators
+	nf_process  : nf process
+	nf_shell  : nf shell bash
+	nf_toFile  : nf export to file
+data
+	test_data

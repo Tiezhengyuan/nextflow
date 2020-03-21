@@ -5,4 +5,5 @@ nf_*/.nextflow*
 .nextflow/
 .nextflow*
 .gitignore
+tmp/
 
