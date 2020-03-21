@@ -1,186 +1,29 @@
-Mar-21 10:38:46.157 [main] DEBUG nextflow.cli.Launcher - $> nextflow run readFasta.nf
-Mar-21 10:38:46.325 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
-Mar-21 10:38:46.345 [main] INFO  nextflow.cli.CmdRun - Launching `readFasta.nf` [awesome_panini] - revision: 8f2bd0da59
-Mar-21 10:38:46.484 [main] DEBUG nextflow.Session - Session uuid: 53d643f6-7ec6-473e-bfd0-505d8cdc73a8
-Mar-21 10:38:46.484 [main] DEBUG nextflow.Session - Run name: awesome_panini
-Mar-21 10:38:46.487 [main] DEBUG nextflow.Session - Executor pool size: 8
-Mar-21 10:38:46.534 [main] DEBUG nextflow.cli.CmdRun - 
+Mar-21 12:28:08.247 [main] DEBUG nextflow.cli.Launcher - $> nextflow run splitFastq.nf
+Mar-21 12:28:08.412 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-21 12:28:08.427 [main] INFO  nextflow.cli.CmdRun - Launching `splitFastq.nf` [awesome_cajal] - revision: 740d6cb502
+Mar-21 12:28:08.575 [main] DEBUG nextflow.Session - Session uuid: c01462cb-7ffe-4db4-93cd-f02a8e41ad53
+Mar-21 12:28:08.575 [main] DEBUG nextflow.Session - Run name: awesome_cajal
+Mar-21 12:28:08.578 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-21 12:28:08.625 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 20.01.0 build 5264
   Created: 12-02-2020 10:14 UTC (05:14 EDT)
   System: Linux 4.15.0-20-generic
   Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
   Encoding: UTF-8 (UTF-8)
-  Process: 3058@yuan-desktop [127.0.1.1]
-  CPUs: 8 - Mem: 15.6 GB (3 GB) - Swap: 372.5 GB (372.5 GB)
-Mar-21 10:38:46.569 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_fromFile/work [ext2/ext3]
-Mar-21 10:38:46.570 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_fromFile/bin
-Mar-21 10:38:46.623 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
-Mar-21 10:38:46.626 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Mar-21 10:38:46.963 [main] DEBUG nextflow.Session - Session start invoked
-Mar-21 10:38:47.556 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Mar-21 10:38:47.577 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: alignment
-Mar-21 10:38:47.578 [main] WARN  nextflow.script.BaseScript - The use of `echo` method is deprecated
-Mar-21 10:38:47.752 [Actor Thread 1] DEBUG n.splitter.AbstractTextSplitter - Splitter `Fasta` collector path: nextflow.splitter.TextFileCollector$CachePath(/home/yuan/project/nextflow/nf_fromFile/work/eb/bd159dc3e978f608d6a1916698902f/pa232.fa, null)
-Mar-21 10:38:47.862 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Mar-21 10:38:47.862 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Mar-21 10:38:47.872 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Mar-21 10:38:47.881 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.6 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
-Mar-21 10:38:47.992 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > alignment -- maxForks: 8; blocking: false
-Mar-21 10:38:48.084 [main] DEBUG nextflow.Session - Session aborted -- Cause: Channel `fa_ch` has been used as an input by more than a process or an operator
-Mar-21 10:38:48.143 [main] DEBUG nextflow.Session - The following nodes are still active:
-[process] alignment
-  status=ACTIVE
-  port 0: (queue) OPEN  ; channel: query_file
-  port 1: (cntrl) -     ; channel: $
-
-Mar-21 10:38:48.153 [main] ERROR nextflow.cli.Launcher - @unknown
-nextflow.dag.MultipleInputChannelException: Channel `fa_ch` has been used as an input by more than a process or an operator
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:265)
-	at nextflow.dag.DAG.inbound(DAG.groovy:190)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
-	at nextflow.dag.DAG.addVertex(DAG.groovy:129)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
-	at nextflow.dag.DAG.addOperatorNode(DAG.groovy:100)
-	at nextflow.dag.NodeMarker.addOperatorNode(NodeMarker.groovy:62)
-	at nextflow.extension.OpCall.addGraphNode(OpCall.groovy:168)
-	at nextflow.extension.OpCall.invoke(OpCall.groovy:158)
-	at nextflow.extension.OpCall.call(OpCall.groovy:110)
-	at nextflow.extension.OperatorEx.invokeExtensionMethod(OperatorEx.groovy:107)
-	at groovy.runtime.metaclass.NextflowDelegatingMetaClass.invokeMethod(NextflowDelegatingMetaClass.java:58)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaClassSite.call(PojoMetaClassSite.java:44)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
-	at Script_85b7c2f0.runScript(Script_85b7c2f0:22)
-	at nextflow.script.BaseScript.runDsl1(BaseScript.groovy:153)
-	at nextflow.script.BaseScript.run(BaseScript.groovy:189)
-	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:225)
-	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:218)
-	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:126)
-	at nextflow.cli.CmdRun.run(CmdRun.groovy:273)
-	at nextflow.cli.Launcher.run(Launcher.groovy:460)
-	at nextflow.cli.Launcher.main(Launcher.groovy:642)
-Mar-21 10:38:48.199 [Actor Thread 8] ERROR nextflow.extension.DataflowHelper - @unknown
-java.nio.channels.ClosedByInterruptException: null
-	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
-	at java.base/sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:162)
-	at java.base/sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:1048)
-	at org.iq80.leveldb.impl.MMapLogWriter.<init>(MMapLogWriter.java:66)
-	at org.iq80.leveldb.impl.Logs.createLogWriter(Logs.java:36)
-	at org.iq80.leveldb.impl.VersionSet.initializeIfNeeded(VersionSet.java:107)
-	at org.iq80.leveldb.impl.VersionSet.<init>(VersionSet.java:92)
-	at org.iq80.leveldb.impl.DbImpl.<init>(DbImpl.java:180)
-	at org.iq80.leveldb.impl.Iq80DBFactory.open(Iq80DBFactory.java:83)
-	at nextflow.sort.LevelDbSort.create(LevelDbSort.java:48)
-	at nextflow.file.SortFileCollector.createStoreAndIndex(SortFileCollector.groovy:174)
-	at nextflow.file.SortFileCollector.add(SortFileCollector.groovy:204)
-	at nextflow.file.SortFileCollector$add.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:135)
-	at nextflow.extension.CollectFileOp.processItem(CollectFileOp.groovy:163)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
-	at groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1050)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1092)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
-	at groovy.lang.Closure.call(Closure.java:405)
-	at groovy.lang.Closure.call(Closure.java:421)
-	at groovy.lang.Closure$call.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:52)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
-	at nextflow.extension.DataflowHelper$_subscribeImpl_closure2.doCall(DataflowHelper.groovy:288)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
-	at groovy.lang.Closure.call(Closure.java:405)
-	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.startTask(DataflowOperatorActor.java:120)
-	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.onMessage(DataflowOperatorActor.java:108)
-	at groovyx.gpars.actor.impl.SDAClosure$1.call(SDAClosure.java:43)
-	at groovyx.gpars.actor.AbstractLoopingActor.runEnhancedWithoutRepliesOnMessages(AbstractLoopingActor.java:293)
-	at groovyx.gpars.actor.AbstractLoopingActor.access$400(AbstractLoopingActor.java:30)
-	at groovyx.gpars.actor.AbstractLoopingActor$1.handleMessage(AbstractLoopingActor.java:93)
-	at groovyx.gpars.util.AsyncMessagingCore.run(AsyncMessagingCore.java:132)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Mar-21 10:38:48.217 [main] WARN  nextflow.util.LoggerHelper - Oops .. something wrong formatting the error stack trace | No such property: stackTraceDepth for class: nextflow.dag.MultipleInputChannelException
-nextflow.dag.MultipleInputChannelException: Channel `fa_ch` has been used as an input by more than a process or an operator
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:265)
-	at nextflow.dag.DAG.inbound(DAG.groovy:190)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
-	at nextflow.dag.DAG.addVertex(DAG.groovy:129)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
-	at nextflow.dag.DAG.addOperatorNode(DAG.groovy:100)
-	at nextflow.dag.NodeMarker.addOperatorNode(NodeMarker.groovy:62)
-	at nextflow.extension.OpCall.addGraphNode(OpCall.groovy:168)
-	at nextflow.extension.OpCall.invoke(OpCall.groovy:158)
-	at nextflow.extension.OpCall.call(OpCall.groovy:110)
-	at nextflow.extension.OperatorEx.invokeExtensionMethod(OperatorEx.groovy:107)
-	at groovy.runtime.metaclass.NextflowDelegatingMetaClass.invokeMethod(NextflowDelegatingMetaClass.java:58)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaClassSite.call(PojoMetaClassSite.java:44)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
-	at Script_85b7c2f0.runScript(Script_85b7c2f0:22)
-	at nextflow.script.BaseScript.runDsl1(BaseScript.groovy:153)
-	at nextflow.script.BaseScript.run(BaseScript.groovy:189)
-	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:225)
-	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:218)
-	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:126)
-	at nextflow.cli.CmdRun.run(CmdRun.groovy:273)
-	at nextflow.cli.Launcher.run(Launcher.groovy:460)
-	at nextflow.cli.Launcher.main(Launcher.groovy:642)
+  Process: 12748@yuan-desktop [127.0.1.1]
+  CPUs: 8 - Mem: 15.6 GB (2.5 GB) - Swap: 372.5 GB (372.5 GB)
+Mar-21 12:28:08.661 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_fromFile/work [ext2/ext3]
+Mar-21 12:28:08.662 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_fromFile/bin
+Mar-21 12:28:08.711 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-21 12:28:08.714 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-21 12:28:09.112 [main] DEBUG nextflow.Session - Session start invoked
+Mar-21 12:28:09.639 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-21 12:28:09.661 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: 
+Mar-21 12:28:09.662 [main] WARN  nextflow.script.BaseScript - The use of `echo` method is deprecated
+Mar-21 12:28:09.830 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar-21 12:28:09.830 [main] DEBUG nextflow.Session - Session await
+Mar-21 12:28:09.830 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar-21 12:28:09.831 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-21 12:28:09.840 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Mar-21 12:28:09.940 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar-21 12:28:09.977 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -1,0 +1,30 @@
+aligner --query query_file
+
+aligner --query query_file
+
+aligner --query query_file
+
+aligner --query query_file
+
+aligner --query query_file
+
+aligner --query query_file
+
+aligner --query query_file
+
+aligner --query query_file
+
+aligner --query query_file
+
+aligner --query query_file
+
+aligner --query query_file
+
+aligner --query query_file
+
+aligner --query query_file
+
+aligner --query query_file
+
+aligner --query query_file
+

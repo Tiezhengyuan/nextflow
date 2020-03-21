@@ -3,7 +3,7 @@ echo true
 
 Channel
     .fromPath('../test_data/pa232.fa')
-    .splitFasta(by:1000, file:true)
+    .splitFasta(by:10000, file:true)
     .set {fa_ch}
 
 process alignment{
@@ -20,6 +20,6 @@ process alignment{
 
 //export
 hit_ch
-    .collectFile(name: "../test/alignment_hits.txt", newLine:true)
+    .collectFile(name: "../test_data/alignment_hits.txt", newLine:true)
     .subscribe { println "$it"}
 

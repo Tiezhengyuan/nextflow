@@ -1,64 +1,34 @@
-Mar-21 10:22:05.372 [main] DEBUG nextflow.cli.Launcher - $> nextflow run readCsv.nf
-Mar-21 10:22:05.548 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
-Mar-21 10:22:05.564 [main] INFO  nextflow.cli.CmdRun - Launching `readCsv.nf` [jolly_baekeland] - revision: 022f5cf491
-Mar-21 10:22:05.708 [main] DEBUG nextflow.Session - Session uuid: ffef99a0-8593-492d-8aaf-2794891be5f7
-Mar-21 10:22:05.708 [main] DEBUG nextflow.Session - Run name: jolly_baekeland
-Mar-21 10:22:05.711 [main] DEBUG nextflow.Session - Executor pool size: 8
-Mar-21 10:22:05.761 [main] DEBUG nextflow.cli.CmdRun - 
+Mar-21 11:04:06.331 [main] DEBUG nextflow.cli.Launcher - $> nextflow run splitFastq.nf
+Mar-21 11:04:06.492 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-21 11:04:06.508 [main] INFO  nextflow.cli.CmdRun - Launching `splitFastq.nf` [suspicious_hawking] - revision: 474f3c5171
+Mar-21 11:04:06.652 [main] DEBUG nextflow.Session - Session uuid: b316e813-c20c-419b-bd93-a2fe04a60a42
+Mar-21 11:04:06.653 [main] DEBUG nextflow.Session - Run name: suspicious_hawking
+Mar-21 11:04:06.655 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-21 11:04:06.702 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 20.01.0 build 5264
   Created: 12-02-2020 10:14 UTC (05:14 EDT)
   System: Linux 4.15.0-20-generic
   Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
   Encoding: UTF-8 (UTF-8)
-  Process: 31422@yuan-desktop [127.0.1.1]
-  CPUs: 8 - Mem: 15.6 GB (3.1 GB) - Swap: 372.5 GB (372.5 GB)
-Mar-21 10:22:05.798 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_fromFile/work [ext2/ext3]
-Mar-21 10:22:05.799 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_fromFile/bin
-Mar-21 10:22:05.834 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
-Mar-21 10:22:05.838 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Mar-21 10:22:06.258 [main] DEBUG nextflow.Session - Session start invoked
-Mar-21 10:22:06.890 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Mar-21 10:22:06.904 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: sample
-Mar-21 10:22:06.905 [main] WARN  nextflow.script.BaseScript - The use of `echo` method is deprecated
-Mar-21 10:22:07.179 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Mar-21 10:22:07.179 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Mar-21 10:22:07.186 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Mar-21 10:22:07.193 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.6 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
-Mar-21 10:22:07.293 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > sample -- maxForks: 8; blocking: false
-Mar-21 10:22:07.321 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
-Mar-21 10:22:07.321 [main] DEBUG nextflow.Session - Session await
-Mar-21 10:22:07.539 [Actor Thread 3] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_fromFile/A001_R1.fq -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_fromFile/A001_R1.fq
-Mar-21 10:22:07.543 [Actor Thread 3] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_fromFile/A001_R2.fq -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_fromFile/A001_R2.fq
-Mar-21 10:22:07.541 [Actor Thread 6] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_fromFile/A001_R1.fq -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_fromFile/A001_R1.fq
-Mar-21 10:22:07.539 [Actor Thread 7] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_fromFile/A002_R1.fq -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_fromFile/A002_R1.fq
-Mar-21 10:22:07.544 [Actor Thread 6] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_fromFile/B001_R2.fq -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_fromFile/B001_R2.fq
-Mar-21 10:22:07.545 [Actor Thread 7] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_fromFile/B002_R2.fq -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_fromFile/B002_R2.fq
-Mar-21 10:22:07.539 [Actor Thread 5] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_fromFile/A003_R1.fq -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_fromFile/A003_R1.fq
-Mar-21 10:22:07.540 [Actor Thread 8] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_fromFile/A003_R1.fq -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_fromFile/A003_R1.fq
-Mar-21 10:22:07.539 [Actor Thread 4] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_fromFile/A002_R1.fq -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_fromFile/A002_R1.fq
-Mar-21 10:22:07.546 [Actor Thread 5] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_fromFile/A003_R2.fq -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_fromFile/A003_R2.fq
-Mar-21 10:22:07.547 [Actor Thread 4] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_fromFile/A002_R2.fq -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_fromFile/A002_R2.fq
-Mar-21 10:22:07.547 [Actor Thread 8] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_fromFile/B003_R2.fq -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_fromFile/B003_R2.fq
-Mar-21 10:22:07.656 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-21 10:22:07.664 [Task submitter] INFO  nextflow.Session - [af/6e2f6b] Submitted process > sample (4)
-Mar-21 10:22:07.676 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-21 10:22:07.677 [Task submitter] INFO  nextflow.Session - [9e/75a62c] Submitted process > sample (1)
-Mar-21 10:22:07.691 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-21 10:22:07.695 [Task submitter] INFO  nextflow.Session - [07/d9a170] Submitted process > sample (2)
-Mar-21 10:22:07.704 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-21 10:22:07.706 [Task submitter] INFO  nextflow.Session - [39/40e063] Submitted process > sample (6)
-Mar-21 10:22:07.709 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: sample (4); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_fromFile/work/af/6e2f6bbacd80dac47936ee47e8a98d]
-Mar-21 10:22:07.714 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-21 10:22:07.715 [Task submitter] INFO  nextflow.Session - [fa/fa2c8f] Submitted process > sample (3)
-Mar-21 10:22:07.724 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-21 10:22:07.726 [Task submitter] INFO  nextflow.Session - [48/e576a5] Submitted process > sample (5)
-Mar-21 10:22:07.734 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: sample (1); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_fromFile/work/9e/75a62cdd738a3a64da46ccaa1c4fdd]
-Mar-21 10:22:07.745 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: sample (2); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_fromFile/work/07/d9a170d198a8dd4218589e7538af81]
-Mar-21 10:22:07.759 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: sample (3); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_fromFile/work/fa/fa2c8fffb59d2cd817f3e71075d1a3]
-Mar-21 10:22:07.770 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: sample (5); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_fromFile/work/48/e576a5f475048107e62a1312d439cf]
-Mar-21 10:22:07.845 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: sample (6); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_fromFile/work/39/40e063659e2335d9f42f6559ea3faa]
-Mar-21 10:22:07.849 [main] DEBUG nextflow.Session - Session await > all process finished
-Mar-21 10:22:07.944 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Mar-21 10:22:07.955 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=6; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=110ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
-Mar-21 10:22:07.983 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
-Mar-21 10:22:08.001 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+  Process: 11063@yuan-desktop [127.0.1.1]
+  CPUs: 8 - Mem: 15.6 GB (2.5 GB) - Swap: 372.5 GB (372.5 GB)
+Mar-21 11:04:06.736 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_fromFile/work [ext2/ext3]
+Mar-21 11:04:06.736 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_fromFile/bin
+Mar-21 11:04:06.767 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-21 11:04:06.770 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-21 11:04:07.138 [main] DEBUG nextflow.Session - Session start invoked
+Mar-21 11:04:07.714 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-21 11:04:07.730 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: alignment
+Mar-21 11:04:07.731 [main] WARN  nextflow.script.BaseScript - The use of `echo` method is deprecated
+Mar-21 11:04:07.965 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-21 11:04:07.965 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-21 11:04:07.973 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-21 11:04:07.980 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.6 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar-21 11:04:08.076 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > alignment -- maxForks: 8; blocking: false
+Mar-21 11:04:08.106 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar-21 11:04:08.106 [main] DEBUG nextflow.Session - Session await
+Mar-21 11:04:08.118 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar-21 11:04:08.191 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-21 11:04:08.201 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Mar-21 11:04:08.426 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar-21 11:04:08.455 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
