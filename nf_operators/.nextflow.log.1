@@ -1,0 +1,55 @@
+Mar-21 10:17:43.284 [main] DEBUG nextflow.cli.Launcher - $> nextflow run flatten.nf
+Mar-21 10:17:43.447 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-21 10:17:43.463 [main] INFO  nextflow.cli.CmdRun - Launching `flatten.nf` [desperate_allen] - revision: 134c5b9f9b
+Mar-21 10:17:43.595 [main] DEBUG nextflow.Session - Session uuid: dc356c19-90f4-4413-b905-fc6cc09611c0
+Mar-21 10:17:43.595 [main] DEBUG nextflow.Session - Run name: desperate_allen
+Mar-21 10:17:43.598 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-21 10:17:43.645 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.01.0 build 5264
+  Created: 12-02-2020 10:14 UTC (05:14 EDT)
+  System: Linux 4.15.0-20-generic
+  Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 30449@yuan-desktop [127.0.1.1]
+  CPUs: 8 - Mem: 15.6 GB (3.1 GB) - Swap: 372.5 GB (372.5 GB)
+Mar-21 10:17:43.681 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_operators/work [ext2/ext3]
+Mar-21 10:17:43.681 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_operators/bin
+Mar-21 10:17:43.714 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-21 10:17:43.718 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-21 10:17:44.150 [main] DEBUG nextflow.Session - Session start invoked
+Mar-21 10:17:44.734 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-21 10:17:44.750 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: f
+Mar-21 10:17:44.751 [main] WARN  nextflow.script.BaseScript - The use of `echo` method is deprecated
+Mar-21 10:17:44.979 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-21 10:17:44.980 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-21 10:17:44.987 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-21 10:17:44.994 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.6 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar-21 10:17:45.099 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > f -- maxForks: 8; blocking: false
+Mar-21 10:17:45.128 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar-21 10:17:45.128 [main] DEBUG nextflow.Session - Session await
+Mar-21 10:17:45.421 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:17:45.430 [Task submitter] INFO  nextflow.Session - [fb/858554] Submitted process > f (4)
+Mar-21 10:17:45.446 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:17:45.447 [Task submitter] INFO  nextflow.Session - [78/bd837f] Submitted process > f (7)
+Mar-21 10:17:45.454 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:17:45.455 [Task submitter] INFO  nextflow.Session - [02/999da2] Submitted process > f (5)
+Mar-21 10:17:45.463 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:17:45.465 [Task submitter] INFO  nextflow.Session - [1e/c0cf6c] Submitted process > f (6)
+Mar-21 10:17:45.465 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: f (4); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/fb/8585549abf409213dd5a3de5d8ddcd]
+Mar-21 10:17:45.472 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:17:45.473 [Task submitter] INFO  nextflow.Session - [3c/c59411] Submitted process > f (3)
+Mar-21 10:17:45.480 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:17:45.481 [Task submitter] INFO  nextflow.Session - [66/16f575] Submitted process > f (2)
+Mar-21 10:17:45.491 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:17:45.499 [Task submitter] INFO  nextflow.Session - [cc/ab96cf] Submitted process > f (1)
+Mar-21 10:17:45.499 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: f (7); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/78/bd837f9a1df40879d506ed6762148b]
+Mar-21 10:17:45.525 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: f (5); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/02/999da2eeafb45b04b263affe8afb1a]
+Mar-21 10:17:45.531 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: f (6); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/1e/c0cf6c62d0baf26b2c8ede0862a9fd]
+Mar-21 10:17:45.538 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: f (3); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/3c/c5941110e67c27940521bb5f3af3d5]
+Mar-21 10:17:45.543 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: f (2); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/66/16f5756db0b8fbb2cc84be99ffb3cb]
+Mar-21 10:17:45.548 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: f (1); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/cc/ab96cf4d7f7f4f92532e5aa7449365]
+Mar-21 10:17:45.552 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar-21 10:17:45.619 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-21 10:17:45.627 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=7; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=14ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Mar-21 10:17:45.691 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar-21 10:17:45.717 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

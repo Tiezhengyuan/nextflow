@@ -1,0 +1,16 @@
+2020-03-21 10:06:11	1.9s	awesome_majorana	OK	91ded617a6ed78daf30a3f80841ae194	67b9fcc4-16c9-4239-b4d1-8bf659faf84b	nextflow run map.nf
+2020-03-21 10:06:40	1.9s	sleepy_hoover	OK	87d7429733169fa0ba905d51d96a3d70	db19e843-f7ac-4411-98a1-efa9cbad7ce2	nextflow run map.nf
+2020-03-21 10:07:34	2.3s	desperate_mahavira	OK	b9072991f523ee3d3ceb223a43c3fce8	1b669b70-ad76-4d6b-a242-b2a17b6d9e62	nextflow run map.nf
+2020-03-21 10:08:32	-	exotic_sammet	-	c002fb102be3604db6d4aefee5507b8d	2dac4d31-6a04-49c9-b343-196f71e365bf	nextflow run map.nf
+2020-03-21 10:09:13	-	lethal_monod	-	5fc33a79a91cdaa64a4313d1b1f0d18f	420e0374-dcac-496c-860d-a506fae08197	nextflow run map.nf
+2020-03-21 10:09:23	2.9s	elegant_engelbart	OK	768a7baa835b9dfecfb70c486c4fed07	c1d8bac9-1fed-45f8-9d67-8709b0db8c94	nextflow run map.nf
+2020-03-21 10:09:44	2.2s	desperate_engelbart	OK	354d1750b13cd2e23e862056150736bc	807e2198-c729-4c7c-8750-9730c659729d	nextflow run map.nf
+2020-03-21 10:10:04	2.2s	cheeky_jones	OK	2c888f22bf81dbc373d9fc1cd2231773	0bdb5464-9e69-43bb-a063-9ae1f654af22	nextflow run map.nf
+2020-03-21 10:10:47	2s	zen_stonebraker	OK	9afd17aa87ac03871ef72e3c83e18eb8	10713f16-54db-4502-a35f-6a17fff33054	nextflow run map.nf
+2020-03-21 10:11:25	-	infallible_stallman	-	a0704df8e854f29f0456c757e0f0ae6f	efb0cd29-4063-45fb-8322-88eb7a30e6c3	nextflow run map.nf
+2020-03-21 10:11:45	2.1s	happy_kalman	OK	9cb362b45502dd833ddc50471b5345c9	6e01b401-bc8e-4c81-a1ee-cbd1b6945d17	nextflow run map.nf
+2020-03-21 10:13:35	1.4s	silly_saha	OK	43ecd29b36e8a6d9a60bd0365336cad0	db8feef5-e4fa-4e25-ac52-cb715406075a	nextflow run flatMap.nf
+2020-03-21 10:14:51	2s	high_descartes	OK	d2d792d3d44eb0611be6f559067bd518	ebef693a-ce29-4b02-a970-73644b1cadd4	nextflow run flatMap.nf
+2020-03-21 10:16:36	2.7s	nice_magritte	OK	a68f83c1a6ffe24c651ae23fba9824d7	921979a8-82bc-49ad-bc96-af8cd0b08a1c	nextflow run fileRange.nf
+2020-03-21 10:17:43	2.7s	desperate_allen	OK	134c5b9f9b2695387b061b490ab89ab2	dc356c19-90f4-4413-b905-fc6cc09611c0	nextflow run flatten.nf
+2020-03-21 10:18:32	2.8s	cheesy_swartz	OK	f9da3c28e7d1d6e2c3fdf98e5652a68a	c849cb54-d2bd-4eb5-84b7-bbaaaf5c913d	nextflow run fileRange.nf

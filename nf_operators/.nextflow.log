@@ -1,0 +1,149 @@
+Mar-21 10:18:31.815 [main] DEBUG nextflow.cli.Launcher - $> nextflow run fileRange.nf
+Mar-21 10:18:31.969 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-21 10:18:31.986 [main] INFO  nextflow.cli.CmdRun - Launching `fileRange.nf` [cheesy_swartz] - revision: f9da3c28e7
+Mar-21 10:18:32.141 [main] DEBUG nextflow.Session - Session uuid: c849cb54-d2bd-4eb5-84b7-bbaaaf5c913d
+Mar-21 10:18:32.141 [main] DEBUG nextflow.Session - Run name: cheesy_swartz
+Mar-21 10:18:32.144 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-21 10:18:32.190 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.01.0 build 5264
+  Created: 12-02-2020 10:14 UTC (05:14 EDT)
+  System: Linux 4.15.0-20-generic
+  Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 30673@yuan-desktop [127.0.1.1]
+  CPUs: 8 - Mem: 15.6 GB (3.1 GB) - Swap: 372.5 GB (372.5 GB)
+Mar-21 10:18:32.225 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_operators/work [ext2/ext3]
+Mar-21 10:18:32.226 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_operators/bin
+Mar-21 10:18:32.274 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-21 10:18:32.277 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-21 10:18:32.580 [main] DEBUG nextflow.Session - Session start invoked
+Mar-21 10:18:33.207 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-21 10:18:33.223 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: foo
+Mar-21 10:18:33.224 [main] WARN  nextflow.script.BaseScript - The use of `echo` method is deprecated
+Mar-21 10:18:33.455 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-21 10:18:33.455 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-21 10:18:33.462 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-21 10:18:33.469 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.6 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar-21 10:18:33.564 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > foo -- maxForks: 8; blocking: false
+Mar-21 10:18:33.590 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar-21 10:18:33.590 [main] DEBUG nextflow.Session - Session await
+Mar-21 10:18:33.820 [Actor Thread 10] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr8.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr8.del.vcf
+Mar-21 10:18:33.820 [Actor Thread 5] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr3.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr3.del.vcf
+Mar-21 10:18:33.820 [Actor Thread 3] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr1.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr1.del.vcf
+Mar-21 10:18:33.821 [Actor Thread 8] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr6.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr6.del.vcf
+Mar-21 10:18:33.824 [Actor Thread 3] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr1.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr1.snp.vcf
+Mar-21 10:18:33.824 [Actor Thread 8] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr6.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr6.snp.vcf
+Mar-21 10:18:33.821 [Actor Thread 9] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr7.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr7.del.vcf
+Mar-21 10:18:33.821 [Actor Thread 6] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr4.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr4.del.vcf
+Mar-21 10:18:33.821 [Actor Thread 7] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr5.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr5.del.vcf
+Mar-21 10:18:33.825 [Actor Thread 9] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr7.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr7.snp.vcf
+Mar-21 10:18:33.825 [Actor Thread 6] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr4.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr4.snp.vcf
+Mar-21 10:18:33.820 [Actor Thread 4] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr2.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr2.del.vcf
+Mar-21 10:18:33.824 [Actor Thread 10] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr8.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr8.snp.vcf
+Mar-21 10:18:33.826 [Actor Thread 4] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr2.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr2.snp.vcf
+Mar-21 10:18:33.824 [Actor Thread 5] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr3.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr3.snp.vcf
+Mar-21 10:18:33.825 [Actor Thread 7] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr5.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr5.snp.vcf
+Mar-21 10:18:33.901 [Actor Thread 5] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr9.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr9.del.vcf
+Mar-21 10:18:33.902 [Actor Thread 5] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr9.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr9.snp.vcf
+Mar-21 10:18:33.906 [Actor Thread 11] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr10.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr10.del.vcf
+Mar-21 10:18:33.907 [Actor Thread 11] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr10.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr10.snp.vcf
+Mar-21 10:18:33.909 [Actor Thread 10] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr11.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr11.del.vcf
+Mar-21 10:18:33.909 [Actor Thread 10] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr11.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr11.snp.vcf
+Mar-21 10:18:33.913 [Actor Thread 8] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr12.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr12.del.vcf
+Mar-21 10:18:33.913 [Actor Thread 8] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr12.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr12.snp.vcf
+Mar-21 10:18:33.919 [Actor Thread 7] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr13.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr13.del.vcf
+Mar-21 10:18:33.919 [Actor Thread 7] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr13.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr13.snp.vcf
+Mar-21 10:18:33.921 [Actor Thread 9] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr14.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr14.del.vcf
+Mar-21 10:18:33.922 [Actor Thread 9] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr14.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr14.snp.vcf
+Mar-21 10:18:33.924 [Actor Thread 4] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr15.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr15.del.vcf
+Mar-21 10:18:33.924 [Actor Thread 4] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr15.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr15.snp.vcf
+Mar-21 10:18:33.942 [Actor Thread 3] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr16.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr16.del.vcf
+Mar-21 10:18:33.943 [Actor Thread 3] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr16.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr16.snp.vcf
+Mar-21 10:18:33.942 [Actor Thread 6] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr17.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr17.del.vcf
+Mar-21 10:18:33.946 [Actor Thread 10] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr18.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr18.del.vcf
+Mar-21 10:18:33.946 [Actor Thread 6] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr17.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr17.snp.vcf
+Mar-21 10:18:33.947 [Actor Thread 10] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr18.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr18.snp.vcf
+Mar-21 10:18:33.949 [Actor Thread 5] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr19.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr19.del.vcf
+Mar-21 10:18:33.950 [Actor Thread 5] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr19.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr19.snp.vcf
+Mar-21 10:18:33.952 [Actor Thread 11] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr20.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr20.del.vcf
+Mar-21 10:18:33.953 [Actor Thread 11] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr20.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr20.snp.vcf
+Mar-21 10:18:33.959 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:33.961 [Actor Thread 4] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr22.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr22.del.vcf
+Mar-21 10:18:33.962 [Actor Thread 4] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr22.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr22.snp.vcf
+Mar-21 10:18:33.964 [Actor Thread 9] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr21.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr21.del.vcf
+Mar-21 10:18:33.965 [Actor Thread 9] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr21.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr21.snp.vcf
+Mar-21 10:18:33.968 [Task submitter] INFO  nextflow.Session - [3a/7740ae] Submitted process > foo (chr3)
+Mar-21 10:18:33.970 [Actor Thread 7] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr23.del.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr23.del.vcf
+Mar-21 10:18:33.971 [Actor Thread 7] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/yuan/project/nextflow/nf_operators/human.chr23.snp.vcf -- Cause: java.nio.file.NoSuchFileException: /home/yuan/project/nextflow/nf_operators/human.chr23.snp.vcf
+Mar-21 10:18:33.980 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:33.981 [Task submitter] INFO  nextflow.Session - [3a/0dcb6a] Submitted process > foo (chr8)
+Mar-21 10:18:33.988 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:33.989 [Task submitter] INFO  nextflow.Session - [d5/214e54] Submitted process > foo (chr6)
+Mar-21 10:18:33.996 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:33.999 [Task submitter] INFO  nextflow.Session - [12/6e7b6f] Submitted process > foo (chr5)
+Mar-21 10:18:34.006 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.008 [Task submitter] INFO  nextflow.Session - [01/f5c20e] Submitted process > foo (chr7)
+Mar-21 10:18:34.017 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.047 [Task submitter] INFO  nextflow.Session - [df/5446e3] Submitted process > foo (chr4)
+Mar-21 10:18:34.054 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.056 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: foo (chr3); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/3a/7740ae49fb9ead7521358f91e6a8fd]
+Mar-21 10:18:34.070 [Task submitter] INFO  nextflow.Session - [11/703e01] Submitted process > foo (chr2)
+Mar-21 10:18:34.083 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.085 [Task submitter] INFO  nextflow.Session - [5d/22c9bb] Submitted process > foo (chr1)
+Mar-21 10:18:34.091 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: foo (chr8); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/3a/0dcb6a51d56ef0427cf824417ff5d7]
+Mar-21 10:18:34.095 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.095 [Task submitter] INFO  nextflow.Session - [3a/63cb65] Submitted process > foo (chr9)
+Mar-21 10:18:34.102 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.103 [Task submitter] INFO  nextflow.Session - [9a/1a1ea0] Submitted process > foo (chr10)
+Mar-21 10:18:34.107 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: foo (chr6); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/d5/214e54bfcc1090e1547aeafe4d73c9]
+Mar-21 10:18:34.123 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.124 [Task submitter] INFO  nextflow.Session - [d7/583629] Submitted process > foo (chr11)
+Mar-21 10:18:34.134 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: foo (chr5); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/12/6e7b6f3a231cb85e8b575e14ccc750]
+Mar-21 10:18:34.145 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: foo (chr7); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/01/f5c20e77e63795d89a397d2fa31ad3]
+Mar-21 10:18:34.151 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.152 [Task submitter] INFO  nextflow.Session - [aa/17df2e] Submitted process > foo (chr12)
+Mar-21 10:18:34.152 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: foo (chr4); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/df/5446e307d94e8385cf820da822f37a]
+Mar-21 10:18:34.168 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.168 [Task submitter] INFO  nextflow.Session - [87/7da9d9] Submitted process > foo (chr14)
+Mar-21 10:18:34.178 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: foo (chr2); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/11/703e014e14c7825aa73e2ac1d6c81b]
+Mar-21 10:18:34.189 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: foo (chr9); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/3a/63cb651aea8ad087f4334be58522af]
+Mar-21 10:18:34.197 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.198 [Task submitter] INFO  nextflow.Session - [ce/dc8829] Submitted process > foo (chr15)
+Mar-21 10:18:34.201 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: foo (chr1); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/5d/22c9bb8cf3da31fe56e0b042d8ce24]
+Mar-21 10:18:34.209 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.209 [Task submitter] INFO  nextflow.Session - [43/61b848] Submitted process > foo (chr13)
+Mar-21 10:18:34.216 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: foo (chr10); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/9a/1a1ea08e069fe0a0161258e6ba6153]
+Mar-21 10:18:34.219 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.219 [Task submitter] INFO  nextflow.Session - [73/3033c6] Submitted process > foo (chr22)
+Mar-21 10:18:34.221 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: foo (chr11); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/d7/58362946a5070df6a67e44678108fc]
+Mar-21 10:18:34.225 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.226 [Task submitter] INFO  nextflow.Session - [2d/b73cef] Submitted process > foo (chr21)
+Mar-21 10:18:34.231 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.232 [Task submitter] INFO  nextflow.Session - [1a/44f2e1] Submitted process > foo (chr16)
+Mar-21 10:18:34.239 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.239 [Task submitter] INFO  nextflow.Session - [f7/fd9ac2] Submitted process > foo (chr17)
+Mar-21 10:18:34.251 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: foo (chr12); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/aa/17df2ea010268de94254d73bf03a4a]
+Mar-21 10:18:34.256 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.257 [Task submitter] INFO  nextflow.Session - [0a/6a0dcb] Submitted process > foo (chr19)
+Mar-21 10:18:34.271 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: foo (chr14); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/87/7da9d92146e9418224035b1f5c561b]
+Mar-21 10:18:34.275 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: foo (chr15); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/ce/dc882966edee71d79c29bd09ed817f]
+Mar-21 10:18:34.276 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.277 [Task submitter] INFO  nextflow.Session - [4e/e3f086] Submitted process > foo (chr18)
+Mar-21 10:18:34.282 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.282 [Task submitter] INFO  nextflow.Session - [f7/ef8430] Submitted process > foo (chr20)
+Mar-21 10:18:34.293 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: foo (chr22); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/73/3033c65ebbd9860ba7c7a3ba180e46]
+Mar-21 10:18:34.298 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-21 10:18:34.299 [Task submitter] INFO  nextflow.Session - [ab/9a7255] Submitted process > foo (chr23)
+Mar-21 10:18:34.307 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: foo (chr16); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/1a/44f2e101f54fbadd500eba67848130]
+Mar-21 10:18:34.321 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: foo (chr13); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/43/61b84859522a9adfa4dd400b2b3ba0]
+Mar-21 10:18:34.338 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: foo (chr21); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/2d/b73cef4fb96fc1e6b705ba059d9211]
+Mar-21 10:18:34.350 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: foo (chr17); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/f7/fd9ac262ccc90fe1b7861f91237c2e]
+Mar-21 10:18:34.356 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: foo (chr19); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/0a/6a0dcb12f8016de1e414bd5c459e3b]
+Mar-21 10:18:34.363 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: foo (chr20); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/f7/ef8430dd2b20563c7a4a6ef8f96a08]
+Mar-21 10:18:34.371 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: foo (chr23); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/ab/9a725544698d5863c1e9aa0721b840]
+Mar-21 10:18:34.421 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: foo (chr18); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/project/nextflow/nf_operators/work/4e/e3f0860d9d8c2c848e82715df8bdf0]
+Mar-21 10:18:34.425 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar-21 10:18:34.521 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-21 10:18:34.530 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=23; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=921ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=7; peakCpus=7; peakMemory=0; ]
+Mar-21 10:18:34.764 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar-21 10:18:34.786 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
