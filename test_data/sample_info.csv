@@ -1,0 +1,7 @@
+sampleId,read1,read2
+A001,A001_R1.fq,A001_R2.fq
+A002,A002_R1.fq,A002_R2.fq
+A003,A003_R1.fq,A003_R2.fq
+B001,A001_R1.fq,B001_R2.fq
+B002,A002_R1.fq,B002_R2.fq
+B003,A003_R1.fq,B003_R2.fq
