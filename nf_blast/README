@@ -1,0 +1,12 @@
+
+
+Tiezheng Yuan 03/23/2020
+
+nextflow blast.nf is used for blast sequencing alignment. the nf automatic recognize DNA or protein blast and establish database for alignment.
+
+
+
+Usage:
+1. rename nextflow_blastn.config or nextflow_blastp.config to nextflow.config and edit it according real cases.
+2. launch nextflow:
+    nextflow run blast.nf

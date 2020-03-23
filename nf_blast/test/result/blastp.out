@@ -1,0 +1,38 @@
+# BLASTP 2.6.0+
+# Query: TR001
+# Database: /home/yuan/project/nextflow/nf_blast/test/reference/protein_reference
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+TR001	TR:A0A022_9ACTO	100.000	60	0	0	1	60	1	60	1.27e-43	120
+# BLASTP 2.6.0+
+# Query: TR002
+# Database: /home/yuan/project/nextflow/nf_blast/test/reference/protein_reference
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+TR002	TR:A0A022_9ACTO	100.000	50	0	0	1	50	11	60	4.40e-36	100
+# BLASTP 2.6.0+
+# Query: TR003
+# Database: /home/yuan/project/nextflow/nf_blast/test/reference/protein_reference
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+TR003	TR:A0A022_9ACTO	84.507	71	0	1	1	71	1	60	4.62e-40	112
+# BLASTP 2.6.0+
+# Query: TR004
+# Database: /home/yuan/project/nextflow/nf_blast/test/reference/protein_reference
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+TR004	TR:A0A022_9ACTO	78.333	60	0	1	1	47	1	60	1.51e-30	87.0
+# BLASTP 2.6.0+
+# Query: TR005
+# Database: /home/yuan/project/nextflow/nf_blast/test/reference/protein_reference
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+TR005	TR:A0A022_9ACTO	85.000	60	0	1	1	51	1	60	1.60e-34	97.1
+# BLASTP 2.6.0+
+# Query: TR006
+# Database: /home/yuan/project/nextflow/nf_blast/test/reference/protein_reference
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+TR006	TR:A0A022_9ACTO	92.857	56	0	3	3	58	2	53	1.92e-30	87.0
+# BLAST processed 6 queries
+
