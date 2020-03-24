@@ -1,0 +1,23 @@
+
+
+Tiezheng Yuan 03/24/2020
+Tiezheng Yuan: tiezhengyuan@hotmail.com
+
+nextflow variants_calling.nf is used for exome sequencing analysis and detecting SNPs. 
+
+
+Features:
+
+1. bowtie2 -> samtools -> bcftools
+2. single- or paired-end fstq files
+3. short reads sequence alignment
+4. automatically create index 
+5. convert bam file to bam file
+6. build bcf file for variants calling analysis
+
+
+
+Usage:
+1. edit nextflow.config and edit it according real cases.
+2. launch nextflow:
+    nextflow run variants_calling.nf
