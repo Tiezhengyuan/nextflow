@@ -1,0 +1,21 @@
+
+
+Tiezheng Yuan 03/24/2020
+Tiezheng Yuan: tiezhengyuan@hotmail.com
+
+nextflow nf_bowtie2.nf is used for bowtie2 sequencing alignment. 
+
+
+Features:
+
+1. bowtie2 v2.3
+2. single- or paired-end fstq files
+3. short reads sequence alignment
+3. automatically create index 
+
+
+
+Usage:
+1. edit nextflow.config and edit it according real cases.
+2. launch nextflow:
+    nextflow run bowtie2.nf
