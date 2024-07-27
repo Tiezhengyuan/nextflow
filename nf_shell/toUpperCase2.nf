@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-echo true;
+println true;
 
 Channel
     .fromPath('../test_data/sample.txt')
@@ -27,9 +27,11 @@ process convertToUpper {
     stdout result
 
     """
-    echo $x
+    println $x
     cat $x | tr '[a-z]' '[A-Z]'
     """
 }
 
-//result.view { it.trim() }
+workflow {
+    splitLetters | flatten | convertToUpper | view { it.trim() }
+}

@@ -1,29 +1,28 @@
-#!/usr/bin/env nextflow
+#!/usr/local/bin nextflow
 
-params.str = 'Hello world!'
+params.str = 'Hello world! It is a good day!'
 
 process splitLetters {
-
     output:
-    file 'chunk_*' into letters
+    path 'chunk_*'
 
     """
-    echo '${params.str}' | split -b 6 chunk_
+    printf '${params.str}' | split -b 6 - chunk_
     """
 }
 
-
 process convertToUpper {
-
     input:
-    file x from letters.flatten()
+    path x
 
     output:
-    stdout result
+    stdout
 
     """
     cat $x | tr '[a-z]' '[A-Z]'
     """
 }
 
-result.view { it.trim() }
+workflow {
+    splitLetters | flatten | convertToUpper | view { it.trim() }
+}

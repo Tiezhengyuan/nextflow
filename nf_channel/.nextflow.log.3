@@ -1,28 +1,64 @@
-Mar-21 10:00:09.760 [main] DEBUG nextflow.cli.Launcher - $> nextflow run subscribe.nf
-Mar-21 10:00:09.938 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
-Mar-21 10:00:09.955 [main] INFO  nextflow.cli.CmdRun - Launching `subscribe.nf` [distracted_hodgkin] - revision: e235be6b86
-Mar-21 10:00:10.092 [main] DEBUG nextflow.Session - Session uuid: 060e0def-a1fb-48b1-b92f-1a7771e12521
-Mar-21 10:00:10.092 [main] DEBUG nextflow.Session - Run name: distracted_hodgkin
-Mar-21 10:00:10.095 [main] DEBUG nextflow.Session - Executor pool size: 8
-Mar-21 10:00:10.150 [main] DEBUG nextflow.cli.CmdRun - 
-  Version: 20.01.0 build 5264
-  Created: 12-02-2020 10:14 UTC (05:14 EDT)
-  System: Linux 4.15.0-20-generic
-  Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
+Jul-25 15:48:22.819 [main] DEBUG nextflow.cli.Launcher - $> nextflow run toMultiFiles.nf
+Jul-25 15:48:22.896 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.3
+Jul-25 15:48:22.909 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/yuan/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2
+Jul-25 15:48:22.915 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-25 15:48:22.915 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-25 15:48:22.917 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+Jul-25 15:48:22.925 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-25 15:48:22.989 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jul-25 15:48:23.009 [main] DEBUG nextflow.cli.CmdRun - Launching `toMultiFiles.nf` [goofy_descartes] DSL2 - revision: 9692f69199
+Jul-25 15:48:23.010 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-25 15:48:23.010 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-25 15:48:23.053 [main] DEBUG nextflow.Session - Session UUID: f2ff7956-f8e0-496d-af98-e465fb879e9f
+Jul-25 15:48:23.053 [main] DEBUG nextflow.Session - Run name: goofy_descartes
+Jul-25 15:48:23.053 [main] DEBUG nextflow.Session - Executor pool size: 24
+Jul-25 15:48:23.058 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-25 15:48:23.062 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=72; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-25 15:48:23.077 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.3 build 5916
+  Created: 09-07-2024 19:35 UTC (15:35 EDT)
+  System: Linux 6.8.0-36-generic
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 17.0.10+7
   Encoding: UTF-8 (UTF-8)
-  Process: 27121@yuan-desktop [127.0.1.1]
-  CPUs: 8 - Mem: 15.6 GB (3.2 GB) - Swap: 372.5 GB (372.5 GB)
-Mar-21 10:00:10.190 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/project/nextflow/nf_channel/work [ext2/ext3]
-Mar-21 10:00:10.190 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/project/nextflow/nf_channel/bin
-Mar-21 10:00:10.223 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
-Mar-21 10:00:10.227 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Mar-21 10:00:10.547 [main] DEBUG nextflow.Session - Session start invoked
-Mar-21 10:00:11.114 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Mar-21 10:00:11.134 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: 
-Mar-21 10:00:11.278 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
-Mar-21 10:00:11.278 [main] DEBUG nextflow.Session - Session await
-Mar-21 10:00:11.278 [main] DEBUG nextflow.Session - Session await > all process finished
-Mar-21 10:00:11.278 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Mar-21 10:00:11.294 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
-Mar-21 10:00:11.381 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
-Mar-21 10:00:11.422 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+  Process: 3868318@linux-yuan [127.0.1.1]
+  CPUs: 24 - Mem: 125.5 GB (3.7 GB) - Swap: 8 GB (8 GB)
+Jul-25 15:48:23.091 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/bio/nextflow/nf_channel/work [ext2/ext3]
+Jul-25 15:48:23.091 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/bio/nextflow/nf_channel/bin
+Jul-25 15:48:23.100 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-25 15:48:23.107 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-25 15:48:23.128 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-25 15:48:23.135 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 25; maxThreads: 1000
+Jul-25 15:48:23.184 [main] DEBUG nextflow.Session - Session start
+Jul-25 15:48:23.491 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-25 15:48:23.499 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/yuan/.nextflow/secrets/store.json
+Jul-25 15:48:23.504 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@d70f722] - activable => nextflow.secret.LocalSecretsProvider@d70f722
+Jul-25 15:48:23.562 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: 
+Jul-25 15:48:23.562 [main] DEBUG nextflow.Session - Igniting dataflow network (1)
+Jul-25 15:48:23.563 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_1f2e356b86bffd9c: /home/yuan/bio/nextflow/nf_channel/toMultiFiles.nf
+Jul-25 15:48:23.563 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-25 15:48:23.563 [main] DEBUG nextflow.Session - Session await
+Jul-25 15:48:23.563 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-25 15:48:23.563 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-25 15:48:23.650 [Actor Thread 3] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 5; slices: 1; internal sort time: 0.011 s; external sort time: 0.003 s; total time: 0.014 s
+Jul-25 15:48:23.656 [Actor Thread 3] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /home/yuan/bio/nextflow/nf_channel/work/collect-file/0b31160deca074c72c242298e8965eb3
+Jul-25 15:48:23.659 [Actor Thread 4] INFO  nextflow.script.BaseScript - File 'Bonjour.txt' contains:
+Jul-25 15:48:23.660 [Actor Thread 4] INFO  nextflow.script.BaseScript - Name is Bonjour
+
+Jul-25 15:48:23.660 [Actor Thread 4] INFO  nextflow.script.BaseScript - File 'Ciao.txt' contains:
+Jul-25 15:48:23.661 [Actor Thread 4] INFO  nextflow.script.BaseScript - Name is Ciao
+
+Jul-25 15:48:23.661 [Actor Thread 3] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-12528080852115061258
+Jul-25 15:48:23.661 [Actor Thread 4] INFO  nextflow.script.BaseScript - File 'Halo.txt' contains:
+Jul-25 15:48:23.662 [Actor Thread 4] INFO  nextflow.script.BaseScript - Name is Halo
+
+Jul-25 15:48:23.662 [Actor Thread 4] INFO  nextflow.script.BaseScript - File 'Hello.txt' contains:
+Jul-25 15:48:23.662 [Actor Thread 4] INFO  nextflow.script.BaseScript - Name is Hello
+
+Jul-25 15:48:23.662 [Actor Thread 4] INFO  nextflow.script.BaseScript - File 'Hola.txt' contains:
+Jul-25 15:48:23.663 [Actor Thread 4] INFO  nextflow.script.BaseScript - Name is Hola
+
+Jul-25 15:48:23.669 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Jul-25 15:48:23.793 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-25 15:48:23.805 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jul-25 15:48:23.806 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
