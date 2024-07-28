@@ -1,9 +1,9 @@
-work/
-nf_*/work/
-nf_*/nextflow/
-nf_*/.nextflow*
-.nextflow/
-.nextflow*
-.gitignore
+reference
+results
+work
+
+
+*/work
+*/.nextflow
 tmp/
 
