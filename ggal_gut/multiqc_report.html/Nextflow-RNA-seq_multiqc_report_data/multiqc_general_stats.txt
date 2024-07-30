@@ -1,0 +1,2 @@
+Sample	Salmon_mqc-generalstats-salmon-percent_mapped	Salmon_mqc-generalstats-salmon-num_mapped
+ggal_gut	67.55192373169902	1984

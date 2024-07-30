@@ -1,0 +1,2 @@
+Module	Section	Sample Name	Source
+Salmon	all_sections	ggal_gut	/home/yuan/bio/nextflow/work/e1/4563e42f53279a364c3e00ec5b8a4c/ggal_gut/libParams/flenDist.txt

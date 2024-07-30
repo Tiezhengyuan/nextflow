@@ -1,0 +1,4 @@
+2024-07-25 14:47:55	1.7s	stoic_murdock	ERR	01ef2f63b4bd61e6be51edc3f64019d4	ac97c1f2-73ef-4ccb-b019-5fe4b5ed3338	nextflow run blast.nf
+2024-07-25 15:43:17	1.4s	nice_curry	ERR	f328c2b54aae0c4f5e1b15b0937c7146	6cdb4cd5-ffff-4b41-ab17-c78ea1401fba	nextflow run blast.nf
+2024-07-25 15:43:30	1.6s	tiny_kalam	ERR	f328c2b54aae0c4f5e1b15b0937c7146	8446b5fe-064b-4231-a0d3-300ca256e876	nextflow run blast.nf
+2024-07-25 15:43:41	1.4s	drunk_edison	ERR	f328c2b54aae0c4f5e1b15b0937c7146	6277c925-c082-48f9-9747-489c421e00d9	nextflow run blast.nf

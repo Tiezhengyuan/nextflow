@@ -1,0 +1,11 @@
+title: "Nextflow RNA-seq"
+subtitle: "A pipeline for quantification of genomic features from short read data"
+
+report_header_info:
+    - Contact E-mail: 'tiezhengyuan@hotmail.com'
+    - Application Type: 'RNA-seq'
+    - Project Type: 'Nextflow'
+
+custom_logo_url: 'https://www.nextflow.io'
+custom_logo_title: 'Bioinformatics'
+
