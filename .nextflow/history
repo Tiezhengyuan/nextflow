@@ -781,3 +781,75 @@
 2024-07-30 14:09:03	3.2s	shrivelled_lumiere	OK	7c010b7a984174a00ea98038c122b5fe	d2ba2439-5131-462a-934b-f5fbb8a385a7	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_paired_fq.config
 2024-07-30 14:09:13	2.7s	astonishing_newton	OK	7c010b7a984174a00ea98038c122b5fe	25d62f76-4c4a-4a92-822e-c9038c80fcea	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_paired_fq.config
 2024-07-30 14:09:25	3.2s	irreverent_rubens	OK	7c010b7a984174a00ea98038c122b5fe	1e41142b-6966-4f71-b9eb-a0eee5a0b360	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_paired_fq.config
+2024-07-30 14:50:14	2.8s	curious_tuckerman	OK	90e1146aa64630a7ccc5acad27ea7b3f	8af2f17d-6fcf-4ef5-8ca4-36c9989e6fb1	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_paired_fq.config
+2024-07-30 14:50:59	3.2s	prickly_morse	OK	90e1146aa64630a7ccc5acad27ea7b3f	f7b1880c-dab2-4b25-b962-874e9559eb54	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_paired_fq.config
+2024-07-30 14:52:05	4.2s	chaotic_dijkstra	OK	57b92b487202651c58bea18f98af7c97	23ce843d-5a19-4294-9a66-8c8824598457	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_paired_fq.config
+2024-07-30 14:52:35	3.6s	scruffy_murdock	OK	d870fa4cbb3a76d483487e36134f956b	4d546eed-cfea-4fe9-993e-57645b4bbea7	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_paired_fq.config
+2024-07-30 15:04:24	-	crazy_saha	-	a532c7d5ea697fd138a6d4eea0778e9c	12b30fae-895b-4837-9c2f-95fd0418a84e	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_single_fq.config
+2024-07-30 15:05:34	-	chaotic_laplace	-	b30abe69a554200ebea4e30af9ce3aed	a481d02e-f3c1-4905-beb0-4b5738e267dd	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_single_fq.config
+2024-07-30 15:06:03	-	desperate_fermat	-	390bb08f0e3fd1f0b8a72e58ac7a9667	1c9906ec-f87b-4438-b639-20c855fa723b	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_single_fq.config
+2024-07-30 15:06:58	1.6s	gloomy_noether	ERR	257be3a3d326a9cb4ab980dba3480e6a	858fc1f7-fb38-4d03-b0b6-1b0d81df4370	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_single_fq.config
+2024-07-30 15:08:45	997ms	clever_sanger	ERR	7441c51fefd097cf355558ff752a9630	9bfa9299-9d40-4048-9659-a3cbdba7ab13	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_single_fq.config
+2024-07-30 15:10:32	2.7s	elegant_hodgkin	OK	7441c51fefd097cf355558ff752a9630	e77862b1-0918-412f-b35a-b0c51c0decd9	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_single_fq.config
+2024-07-30 15:11:28	2.8s	compassionate_hilbert	OK	9cc29bacdb727641a0a2b23666b1cf4a	04e7b14d-8525-44c0-a77d-635069487e34	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_single_fq.config
+2024-07-30 15:12:19	3.1s	amazing_brown	OK	32b936cee7c7f7d2a31af3e00b862b7e	3728db64-df0b-47d4-ad98-59ef354a104b	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_single_fq.config
+2024-07-30 15:13:35	3s	marvelous_bose	OK	32b936cee7c7f7d2a31af3e00b862b7e	c629fa7f-8d8d-41f7-97f4-3037fb84e6eb	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_paired_fq.config
+2024-07-30 15:21:01	1.2s	voluminous_gates	ERR	e75d8b91957a6bfb554c323b126e329c	8775ec27-caf3-42f5-a4cb-cf4d7f39b5c1	nextflow run bio/fastqc.nf
+2024-07-30 15:21:23	-	insane_goldwasser	-	46d9b62c20b2b26e556436d7cae12fa0	b9aa6048-6e3f-4b86-9244-62fe05578dc8	nextflow run bio/fastqc.nf
+2024-07-30 15:21:51	1.7s	curious_meitner	ERR	42739777a9e44a33de6698267a5606a2	451e44c7-8dc7-4dc7-bae1-a9471dbeb78e	nextflow run bio/fastqc.nf
+2024-07-30 15:27:10	1.9s	deadly_snyder	ERR	8f9f8c1fcd6d48b3a7fdb894a8289f70	356a1076-873d-47ca-8c52-ac585fdc5e64	nextflow run bio/fastqc.nf
+2024-07-30 15:30:00	-	focused_sammet	-	8a3b43e2567b0c58322953ab2524cb47	99e60bd3-8c3a-4563-ba2f-d321193ece89	nextflow run bio/fastqc.nf
+2024-07-30 15:31:39	-	spontaneous_gilbert	-	1a6c52a97ac36b8dfa2cd9fa9e2b45d3	4c97aa23-92e1-49fd-8648-6ee7dffa801a	nextflow run bio/fastqc.nf
+2024-07-30 15:32:18	1.2s	astonishing_koch	ERR	59e036eda7c5cee9f1b798d5fb88a6a6	35d77974-3a3c-4063-ae57-ab01f3719787	nextflow run bio/fastqc.nf
+2024-07-30 15:33:07	990ms	high_swanson	ERR	0217f34045acb71db62acc04408f090d	cda15164-ce82-47dc-828a-a25c54783c61	nextflow run bio/fastqc.nf
+2024-07-30 15:34:44	2.8s	peaceful_caravaggio	ERR	2cd375df6bc981ae7bbf68ebe3ecf1f3	b0feb31e-a93c-4999-b262-14963cd0aecb	nextflow run bio/fastqc.nf
+2024-07-30 15:35:15	1s	small_hamilton	ERR	e5eed5f17d83a783c66e4c723f354a04	005bfd2b-03e6-49f9-a5d8-f4fad6ddb6d4	nextflow run bio/fastqc.nf
+2024-07-30 15:36:21	1s	soggy_neumann	ERR	bb958ce33376284c99706d5a9ff2e488	f62b4d62-4f86-4fdd-a743-ee3e4289cdd2	nextflow run bio/fastqc.nf
+2024-07-30 15:37:01	2.9s	intergalactic_thompson	ERR	b541e034d2b34bf8e31aad9940f7a97f	fa7968b1-85ee-43cd-929a-67c23f7c5d7b	nextflow run bio/fastqc.nf
+2024-07-30 15:37:28	1.3s	compassionate_mandelbrot	ERR	a36c59c82ff8a24ce2a952fb58efeec3	305254b7-b633-4271-8309-8c69ae7df4e4	nextflow run bio/fastqc.nf
+2024-07-30 15:39:25	-	intergalactic_lumiere	-	812fc53ac03452643b23b5bb85ff72d5	cfbda339-8b79-4db7-8e4c-8b9d96bcd4e6	nextflow run bio/fastqc.nf
+2024-07-30 15:39:48	-	thirsty_wright	-	e67521061b7ac9ceea1db652cf221fea	0f87dff0-cd10-4f5c-bc3e-704d012c7281	nextflow run bio/fastqc.nf
+2024-07-30 15:42:45	-	shrivelled_sammet	-	467cfb5be8b69dac134376e084060a21	61e52225-cd7f-4e8d-98a1-6f1ecb6f6ef0	nextflow run bio/fastqc.nf
+2024-07-30 15:43:44	-	naughty_newton	-	36e540697699e4982ad2dd45ca68b01b	03cc3c7e-88fc-44dd-bb80-789a13c2cd31	nextflow run bio/fastqc.nf
+2024-07-30 15:47:15	1.6s	cheesy_albattani	ERR	e21713b796e020ddb7b343c8ddd05096	bae24481-6c38-419c-92a6-7b758a0226ac	nextflow run bio/fastqc.nf
+2024-07-30 15:48:58	-	tender_easley	-	d2061f7bcfc1f543201b274d60788600	5926e4b9-e632-405b-9462-f445030e85c8	nextflow run bio/fastqc.nf
+2024-07-30 15:49:11	2.2s	chaotic_faggin	OK	82d1c5350f712eccb765b09b31bb342f	81d7faf6-0620-4cc8-bfa7-3951022938b7	nextflow run bio/fastqc.nf
+2024-07-30 15:49:40	3.8s	peaceful_watson	OK	4a60890a379aacfe59f9d7b62888f7bd	952587b4-910a-4487-99b2-1e26986b450b	nextflow run bio/fastqc.nf
+2024-07-30 15:50:16	1.8s	thirsty_sammet	ERR	306d3a9440fb97ebb08260f70577d415	4213c23a-0993-433b-bf82-f15c6d440a3e	nextflow run bio/fastqc.nf
+2024-07-30 15:50:26	1.4s	romantic_dubinsky	ERR	78eef5b579854136618042101f9e91b9	1c92e83e-20df-4ebb-a5cb-4889d3a87655	nextflow run bio/fastqc.nf
+2024-07-30 15:50:38	4s	hungry_crick	OK	4a60890a379aacfe59f9d7b62888f7bd	a6e97d44-8c05-4507-9e45-f49bc00f564e	nextflow run bio/fastqc.nf
+2024-07-30 15:51:03	3s	elated_picasso	ERR	37549c9a93e295cd188a6f3ddfe9fa26	8eacbfec-effc-4360-b07c-d4b5e0389939	nextflow run bio/fastqc.nf
+2024-07-30 15:51:17	1.2s	fervent_pike	ERR	3625f8e21e53a6543e04a70bf659b6f6	5baedc10-85fa-44a9-ab92-319f43c68d09	nextflow run bio/fastqc.nf
+2024-07-30 15:52:03	1.2s	thirsty_lamarck	ERR	9918f601c01ebd43b574987ba4d585bc	3e302598-bc10-4a8c-aa7f-83e16b5e7d5c	nextflow run bio/fastqc.nf
+2024-07-30 15:52:21	2.2s	soggy_bose	OK	eca01ca18112ff22471d2b803be56c42	e7445154-a968-40fd-bffd-41103f288921	nextflow run bio/fastqc.nf
+2024-07-30 15:52:40	2.6s	shrivelled_pare	OK	eca01ca18112ff22471d2b803be56c42	9fe562e8-be15-4fa4-a78b-5a74adec35b1	nextflow run bio/fastqc.nf
+2024-07-30 15:53:16	1.9s	angry_davinci	ERR	7e8b072654a4b39dcb314bfa12b23578	f9ba621d-7701-4a11-9a42-7ded1ff9f18a	nextflow run bio/fastqc.nf
+2024-07-30 15:53:30	2.5s	intergalactic_tuckerman	OK	aa37fa10737e8048e0a23eed3755d129	61267a14-0e5c-45fd-8cbe-72ca7e3c75e0	nextflow run bio/fastqc.nf
+2024-07-30 15:54:20	2.4s	clever_kare	OK	3d2a84eb819f1457525639f50f437f36	64277449-e776-42a4-822e-1a855e353bb8	nextflow run bio/fastqc.nf
+2024-07-30 15:54:28	2.2s	stupefied_lavoisier	OK	3d2a84eb819f1457525639f50f437f36	eb21b646-34da-4a2f-8191-f5c167ae0c44	nextflow run bio/fastqc.nf
+2024-07-30 15:55:34	2.5s	crazy_neumann	OK	4331681e4a9c33e8799b4782850598e1	c9cdf9ec-1e6d-439f-87c2-ee1d31eb6c97	nextflow run bio/fastqc.nf
+2024-07-30 15:55:44	2.3s	astonishing_caravaggio	OK	83ed687b80e38ceca574fd1134148bcb	abea78c2-417f-4dde-8422-5e11b0814311	nextflow run bio/fastqc.nf
+2024-07-30 15:57:21	3s	distracted_agnesi	OK	2938b4b58126ccdeeea311a0b4bf73e0	62632eec-cb69-4570-a969-8a5cc539ec10	nextflow run bio/fastqc.nf
+2024-07-30 15:57:42	3.5s	elated_woese	OK	ea3e72dba80dc5221904da1990b2c091	7a25d84f-79c1-47f1-9520-3fc481baa7e4	nextflow run bio/fastqc.nf
+2024-07-30 15:57:51	3.4s	elegant_mendel	OK	ea3e72dba80dc5221904da1990b2c091	07023493-e823-469b-b4f0-9b8138497d62	nextflow run bio/fastqc.nf
+2024-07-30 15:58:13	2.8s	festering_ampere	OK	ea3e72dba80dc5221904da1990b2c091	ac90eff4-249d-4b3e-823b-63d83ec753c6	nextflow run bio/fastqc.nf
+2024-07-30 15:58:26	3.1s	berserk_picasso	OK	ea3e72dba80dc5221904da1990b2c091	087f0891-1a9e-4564-8200-a76432311912	nextflow run bio/fastqc.nf
+2024-07-30 15:59:37	4s	adoring_curran	OK	d8e8050c70be0bffd47ef25cfbd4d38f	c995114a-66db-4dc8-8cae-1f2abf26c72a	nextflow run bio/fastqc.nf
+2024-07-30 15:59:47	2.5s	gigantic_bartik	OK	d8e8050c70be0bffd47ef25cfbd4d38f	99eaad03-3e19-4540-9228-1cb3baf8504a	nextflow run bio/fastqc.nf
+2024-07-30 16:28:02	-	hopeful_shaw	-	6fca0cd478129ad5fd50328a126cd0ab	77c03866-6ace-42a6-a5a7-3747b23b742b	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_single_fq.config
+2024-07-30 16:28:34	2.3s	curious_varahamihira	ERR	41e7f101c0ff1b75116ba173aabde82c	d295c3fc-f9e0-478f-87fd-95d053e0c967	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_single_fq.config
+2024-07-30 16:28:54	2.8s	cheesy_sanger	OK	a0f2dd691e1cc6b118701350055362fb	b3ba675e-1241-4554-bd80-d7b28f10f06d	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_single_fq.config
+2024-07-30 16:29:23	3.6s	sleepy_faraday	OK	c6b57e1f375fe61f78bd3ef954a1edef	54440485-9671-4c6c-83fb-c474f6d848b0	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_single_fq.config
+2024-07-30 16:29:37	1.6s	serene_cantor	ERR	c6b57e1f375fe61f78bd3ef954a1edef	675c9ac1-3b53-4c3c-b64a-2e4494b2a6a3	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_paired_fq.config
+2024-07-30 16:30:03	1.3s	boring_blackwell	ERR	c6b57e1f375fe61f78bd3ef954a1edef	62ecd141-81f7-4c89-9c6f-46002ac69cb6	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_paired_fq.config
+2024-07-30 20:20:13	1.5s	fabulous_ramanujan	OK	0cb053e04c6b4fa2914a61aa33c595ed	d31a514c-0f32-43dc-b701-854d0fe46014	nextflow run nf/input/pairedEnd.nf
+2024-07-30 20:20:41	-	big_torvalds	-	5f670041b67b40441fbe33da02a64d52	3e70017b-366e-4a45-a49f-b85b833f2aad	nextflow run nf/input/pairedEnd.nf
+2024-07-30 20:21:02	865ms	marvelous_picasso	OK	636c797b179a05ec109326cb31f3aaaf	fecb422a-4f99-488e-b559-080bc06dcdd6	nextflow run nf/input/pairedEnd.nf
+2024-07-30 20:21:09	1s	kickass_heyrovsky	OK	7a08c1942c31f3ec4c76c4f585e9cec0	b5c3bf39-8eba-4dd7-afc3-83c1ddcce3f7	nextflow run nf/input/pairedEnd.nf
+2024-07-30 20:21:43	995ms	exotic_poisson	OK	29422ca93fba7e03239b6df12085f8ed	55630c8f-6f56-461c-b346-f57bab0c10d0	nextflow run nf/input/pairedEnd.nf
+2024-07-30 20:22:02	1.2s	nostalgic_cuvier	OK	ccceabf430c2bd0f3810dcb2cae3828a	32cc8ce2-42b5-4c27-b7c7-37ab5f6bfa27	nextflow run nf/input/pairedEnd.nf
+2024-07-30 20:23:35	1.4s	nauseous_chandrasekhar	OK	9a325330862b58fd38f84966837e0931	61b3cbf4-6996-4c39-a50c-38e2aa45c6fe	nextflow run nf/input/pairedEnd2.nf
+2024-07-30 20:25:30	4.1s	happy_mayer	OK	14eda4cb6a39c5f950c742cbf5c81b5f	2f98751a-9b06-4fb8-8a1c-7b2a30a9dda1	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_paired_fq.config
+2024-07-30 20:25:48	3.4s	gloomy_allen	OK	14eda4cb6a39c5f950c742cbf5c81b5f	c09ce7f9-5bb7-44ad-981a-ce151ad72419	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_paired_fq.config
+2024-07-30 20:27:06	2.9s	silly_shaw	OK	14eda4cb6a39c5f950c742cbf5c81b5f	d3ed875b-b93b-40eb-a228-51543ea783a7	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_paired_fq.config
+2024-07-30 20:27:23	3.4s	focused_cray	OK	14eda4cb6a39c5f950c742cbf5c81b5f	e96b5e72-1647-4bf1-b4c6-c52a90d2f4c4	nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_paired_fq.config

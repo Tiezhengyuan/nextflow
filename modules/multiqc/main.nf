@@ -1,7 +1,7 @@
 process multiQC {
     debug true
     conda 'bioconda::multiqc=1.23'
-    publishDir "${params.outDir}/${alnDir}", mode:'copy', overWrite: true
+    publishDir "${params.outDir}/${params.sampleName}", mode:'copy', overWrite: true
     
     input:
     path alnDir

@@ -1,74 +1,89 @@
-Jul-30 14:09:03.055 [main] DEBUG nextflow.cli.Launcher - $> nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_paired_fq.config
-Jul-30 14:09:03.242 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.3
-Jul-30 14:09:03.252 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/yuan/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2
-Jul-30 14:09:03.258 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jul-30 14:09:03.258 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jul-30 14:09:03.260 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
-Jul-30 14:09:03.269 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jul-30 14:09:03.287 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /home/yuan/bio/nextflow/pipelines/mrnaseq/salmon_paired_fq.config
-Jul-30 14:09:03.290 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/yuan/bio/nextflow/pipelines/mrnaseq/salmon_paired_fq.config
-Jul-30 14:09:03.318 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/yuan/.nextflow/secrets/store.json
-Jul-30 14:09:03.321 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@61e45f87] - activable => nextflow.secret.LocalSecretsProvider@61e45f87
-Jul-30 14:09:03.325 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Jul-30 14:09:03.603 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
-Jul-30 14:09:03.613 [main] DEBUG nextflow.cli.CmdRun - Launching `pipelines/mrnaseq/salmon.nf` [shrivelled_lumiere] DSL2 - revision: 7c010b7a98
-Jul-30 14:09:03.614 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Jul-30 14:09:03.614 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Jul-30 14:09:03.653 [main] DEBUG nextflow.Session - Session UUID: d2ba2439-5131-462a-934b-f5fbb8a385a7
-Jul-30 14:09:03.654 [main] DEBUG nextflow.Session - Run name: shrivelled_lumiere
-Jul-30 14:09:03.654 [main] DEBUG nextflow.Session - Executor pool size: 24
-Jul-30 14:09:03.661 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Jul-30 14:09:03.665 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=72; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Jul-30 14:09:03.684 [main] DEBUG nextflow.cli.CmdRun - 
+Jul-30 20:25:47.833 [main] DEBUG nextflow.cli.Launcher - $> nextflow run pipelines/mrnaseq/salmon.nf -c pipelines/mrnaseq/salmon_paired_fq.config
+Jul-30 20:25:48.012 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.3
+Jul-30 20:25:48.023 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/yuan/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2
+Jul-30 20:25:48.029 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-30 20:25:48.029 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-30 20:25:48.031 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+Jul-30 20:25:48.039 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-30 20:25:48.055 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /home/yuan/bio/nextflow/pipelines/mrnaseq/salmon_paired_fq.config
+Jul-30 20:25:48.056 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/yuan/bio/nextflow/pipelines/mrnaseq/salmon_paired_fq.config
+Jul-30 20:25:48.076 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/yuan/.nextflow/secrets/store.json
+Jul-30 20:25:48.078 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@61e45f87] - activable => nextflow.secret.LocalSecretsProvider@61e45f87
+Jul-30 20:25:48.081 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-30 20:25:48.371 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jul-30 20:25:48.383 [main] DEBUG nextflow.cli.CmdRun - Launching `pipelines/mrnaseq/salmon.nf` [gloomy_allen] DSL2 - revision: 14eda4cb6a
+Jul-30 20:25:48.384 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-30 20:25:48.384 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-30 20:25:48.419 [main] DEBUG nextflow.Session - Session UUID: c09ce7f9-5bb7-44ad-981a-ce151ad72419
+Jul-30 20:25:48.419 [main] DEBUG nextflow.Session - Run name: gloomy_allen
+Jul-30 20:25:48.419 [main] DEBUG nextflow.Session - Executor pool size: 24
+Jul-30 20:25:48.426 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-30 20:25:48.430 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=72; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-30 20:25:48.442 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 24.04.3 build 5916
   Created: 09-07-2024 19:35 UTC (15:35 EDT)
   System: Linux 6.8.0-36-generic
   Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 17.0.10+7
   Encoding: UTF-8 (UTF-8)
-  Process: 328237@linux-yuan [127.0.1.1]
-  CPUs: 24 - Mem: 125.5 GB (6.2 GB) - Swap: 8 GB (8 GB)
-Jul-30 14:09:03.713 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/bio/nextflow/work [ext2/ext3]
-Jul-30 14:09:03.714 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/bio/nextflow/pipelines/mrnaseq/bin
-Jul-30 14:09:03.722 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Jul-30 14:09:03.730 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Jul-30 14:09:03.749 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Jul-30 14:09:03.754 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 25; maxThreads: 1000
-Jul-30 14:09:03.791 [main] DEBUG nextflow.Session - Session start
-Jul-30 14:09:03.944 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Jul-30 14:09:04.146 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jul-30 14:09:04.147 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-30 14:09:04.151 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Jul-30 14:09:04.154 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=24; memory=125.5 GB; capacity=24; pollInterval=100ms; dumpInterval=5m
-Jul-30 14:09:04.156 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Jul-30 14:09:04.204 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jul-30 14:09:04.205 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-30 14:09:04.213 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: alignPaired, multiQC
-Jul-30 14:09:04.213 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
-Jul-30 14:09:04.217 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > alignPaired
-Jul-30 14:09:04.217 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/ggal/; pattern: ggal_gut_{1,2}.fq; options: [checkIfExists:true]
-Jul-30 14:09:04.217 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > multiQC
-Jul-30 14:09:04.218 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_7ac558258e8d910d: /home/yuan/bio/nextflow/pipelines/mrnaseq/salmon.nf
-  Script_b348816ffce4c991: /home/yuan/bio/nextflow/pipelines/mrnaseq/../../modules/salmon/main.nf
-  Script_56de472f43540e13: /home/yuan/bio/nextflow/pipelines/mrnaseq/../../modules/multiqc/main.nf
-Jul-30 14:09:04.218 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Jul-30 14:09:04.218 [main] DEBUG nextflow.Session - Session await
-Jul-30 14:09:04.345 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-30 14:09:04.347 [Task submitter] INFO  nextflow.Session - [5a/79c9c6] Submitted process > alignPaired (ggal_gut)
-Jul-30 14:09:04.490 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: alignPaired (ggal_gut); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/bio/nextflow/work/5a/79c9c6675c0bc640e7b53bcb243f01]
-Jul-30 14:09:04.491 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=72; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Jul-30 14:09:04.506 [Actor Thread 15] INFO  nextflow.script.BaseScript - output of alignment: /home/yuan/bio/nextflow/work/5a/79c9c6675c0bc640e7b53bcb243f01/ggal_gut
-Jul-30 14:09:04.512 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=72; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Jul-30 14:09:04.513 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-30 14:09:04.513 [Task submitter] INFO  nextflow.Session - [6f/04db0c] Submitted process > multiQC (1)
-Jul-30 14:09:05.987 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: multiQC (1); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/bio/nextflow/work/6f/04db0c02096801c49ec2c5e24e8b77]
-Jul-30 14:09:05.989 [Actor Thread 24] INFO  nextflow.script.BaseScript - output of QC: /home/yuan/bio/nextflow/work/6f/04db0c02096801c49ec2c5e24e8b77/multiqc_report.html
-Jul-30 14:09:05.990 [main] DEBUG nextflow.Session - Session await > all processes finished
-Jul-30 14:09:06.089 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Jul-30 14:09:06.089 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Jul-30 14:09:06.096 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
-Jul-30 14:09:06.097 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
-Jul-30 14:09:06.102 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1.5s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
-Jul-30 14:09:06.230 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Jul-30 14:09:06.258 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-Jul-30 14:09:06.259 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+  Process: 981756@linux-yuan [127.0.1.1]
+  CPUs: 24 - Mem: 125.5 GB (5.4 GB) - Swap: 8 GB (8 GB)
+Jul-30 20:25:48.455 [main] DEBUG nextflow.Session - Work-dir: /home/yuan/bio/nextflow/work [ext2/ext3]
+Jul-30 20:25:48.455 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yuan/bio/nextflow/pipelines/mrnaseq/bin
+Jul-30 20:25:48.461 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-30 20:25:48.466 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-30 20:25:48.482 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-30 20:25:48.488 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 25; maxThreads: 1000
+Jul-30 20:25:48.527 [main] DEBUG nextflow.Session - Session start
+Jul-30 20:25:48.724 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-30 20:25:48.935 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-30 20:25:48.935 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 20:25:48.939 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-30 20:25:48.943 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=24; memory=125.5 GB; capacity=24; pollInterval=100ms; dumpInterval=5m
+Jul-30 20:25:48.944 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-30 20:25:48.981 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-30 20:25:48.981 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 20:25:48.993 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-30 20:25:48.993 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 20:25:49.001 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: alignSingle, fastQC, alignPaired, multiQC
+Jul-30 20:25:49.001 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
+Jul-30 20:25:49.004 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > alignPaired
+Jul-30 20:25:49.004 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/ggal/; pattern: ggal_gut_{1,2}.fq; options: [checkIfExists:true]
+Jul-30 20:25:49.005 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > fastQC
+Jul-30 20:25:49.005 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > multiQC
+Jul-30 20:25:49.005 [PathVisitor-2] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/ggal/; pattern: ggal_gut_{1,2}.fq; options: [checkIfExists:true]
+Jul-30 20:25:49.005 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_38b7bcb468470c91: /home/yuan/bio/nextflow/pipelines/mrnaseq/../../modules/multiqc/main.nf
+  Script_b6e64a183d3c3d96: /home/yuan/bio/nextflow/pipelines/mrnaseq/../../modules/salmon/main.nf
+  Script_f659e73b408b7249: /home/yuan/bio/nextflow/pipelines/mrnaseq/salmon.nf
+  Script_8857d5c34ac9d4d7: /home/yuan/bio/nextflow/pipelines/mrnaseq/../../modules/fastqc/main.nf
+Jul-30 20:25:49.005 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-30 20:25:49.005 [main] DEBUG nextflow.Session - Session await
+Jul-30 20:25:49.048 [Actor Thread 15] INFO  nextflow.script.BaseScript - ggal_gut_2.fq
+Jul-30 20:25:49.048 [Actor Thread 13] INFO  nextflow.script.BaseScript - ggal_gut_1.fq
+Jul-30 20:25:49.104 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-30 20:25:49.105 [Task submitter] INFO  nextflow.Session - [b8/23da6d] Submitted process > fastQC (2)
+Jul-30 20:25:49.110 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-30 20:25:49.111 [Task submitter] INFO  nextflow.Session - [e3/0077bf] Submitted process > fastQC (1)
+Jul-30 20:25:49.115 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-30 20:25:49.116 [Task submitter] INFO  nextflow.Session - [e5/631a1c] Submitted process > alignPaired (ggal_gut)
+Jul-30 20:25:49.249 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: alignPaired (ggal_gut); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/bio/nextflow/work/e5/631a1c39e0c0b9118456c5969a27be]
+Jul-30 20:25:49.250 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=72; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-30 20:25:49.260 [Actor Thread 25] INFO  nextflow.script.BaseScript - output of alignment: /home/yuan/bio/nextflow/work/e5/631a1c39e0c0b9118456c5969a27be/ggal_gut
+Jul-30 20:25:49.269 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-30 20:25:49.269 [Task submitter] INFO  nextflow.Session - [c0/208609] Submitted process > multiQC (1)
+Jul-30 20:25:49.270 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=72; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-30 20:25:50.245 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: fastQC (1); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/bio/nextflow/work/e3/0077bf26565d82084863a825c79a99]
+Jul-30 20:25:50.249 [Actor Thread 22] INFO  nextflow.script.BaseScript - output of FastqQC: /home/yuan/bio/nextflow/work/e3/0077bf26565d82084863a825c79a99/ggal_gut_1.fq
+Jul-30 20:25:50.253 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: fastQC (2); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/bio/nextflow/work/b8/23da6d0089be5715527fa84ded93c1]
+Jul-30 20:25:50.256 [Actor Thread 22] INFO  nextflow.script.BaseScript - output of FastqQC: /home/yuan/bio/nextflow/work/b8/23da6d0089be5715527fa84ded93c1/ggal_gut_2.fq
+Jul-30 20:25:51.094 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: multiQC (1); status: COMPLETED; exit: 0; error: -; workDir: /home/yuan/bio/nextflow/work/c0/208609009cedebe690d601382e0b3d]
+Jul-30 20:25:51.095 [Actor Thread 22] INFO  nextflow.script.BaseScript - output of MultiQC: /home/yuan/bio/nextflow/work/c0/208609009cedebe690d601382e0b3d/multiqc_report.html
+Jul-30 20:25:51.097 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-30 20:25:51.195 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-30 20:25:51.196 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-30 20:25:51.200 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jul-30 20:25:51.201 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Jul-30 20:25:51.208 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=4; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=4s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
+Jul-30 20:25:51.385 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-30 20:25:51.426 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jul-30 20:25:51.426 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

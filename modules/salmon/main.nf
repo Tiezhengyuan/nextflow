@@ -6,8 +6,6 @@ process alignPaired {
     conda 'bioconda::salmon=1.10.2'
     
     input:
-    path index
-    val options
     tuple val(pair_id), path(reads)
 
     output:
@@ -15,6 +13,25 @@ process alignPaired {
 
     script:
     """
-    salmon quant $options -i $index -1 ${reads[0]} -2 ${reads[1]} -o $pair_id
+    salmon quant $params.options -i $params.index \
+        -1 ${reads[0]} -2 ${reads[1]} -o $params.sampleName
+    """
+}
+
+process alignSingle {
+    debug true
+    publishDir params.outDir, mode: 'copy', overWrite: true
+    tag "${params.sampleName}"
+    conda 'bioconda::salmon=1.10.2'
+    
+    input:
+    path reads
+
+    output:
+    path params.sampleName
+
+    script:
+    """
+    salmon quant $params.options -i $params.index -r ${reads} -o $params.sampleName
     """
 }
